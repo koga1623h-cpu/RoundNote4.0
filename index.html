@@ -1,0 +1,2916 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAK10lEQVR4nO3deXCUdx3H8c8+2c2dQC6OkJAAIeEKIEdpoBz2QmoLBTsiHsxwjTpSO6KjndpW7YzSqWLbGVsHaYrYUgYtUIvlEotEDikEoQbCFRJCTiAJuTeb7K5/IEyhhGyy+93n9/zyec30rzLffWjf88uzT57n99hgohnLdnvN/HySk5c722bG5wbtQxkvBSNy0Q9gxNQZqbhFhjJk8lWgww7oMIZMPRWosAMyhCFToPgbtuHvATBmCiR/e/IraMZMEvzpqkfLO0OmYOnuKUi3V2jGTMHU3d66FTRjJjN0pzufg2bMZCZf+/MpaMZMKvClwy6DZsykkq569Ps6NJFK7hk0V2dS0b267DRoxkwq66zPuwbNmMkK7tYpz6FJK58LmqszWcmdvXKFJq3cFjRXZ7Kiz3bLFZq0citors5kZTf75QpNWmHQpBUbwNMN0gdXaNIKgyatMGjSCoMmrRj8Qkg64QpNWmHQpBUGTVph0KQVBk1aYdCkFQZNWmHQpBUGTVph0KQVBk1aYdCkFQZNWmHQpBW72QfQE3OmJePZJWPMPoyAaO/w/P8fL5wuN643ulDf6EJdgwuV11pRdqUFZdUtKK5ogrPNbfbhKs+SQevEYTfgsN/4QdkHDvSPD7/rn/N4vLhY3oTC4nocL6zFkYJraG7tCOahWgKDtgjDsCEjNQYZqTF4YkYKOtxenDxXhz2HK7DvWBXaXB6zD1EJDNqi7CE2TBwZj4kj4/H010Zgx8FybNpVgtr6NrMPzVT8UqiB6Eg7vvpIGjatfgDfeSoTkeG9d51i0BoJDw3Boi+lY8NLUzElO9HswzEFg9ZQv/hwvPLMBKxcmAXD6NHr3C3LpvtT3xmpMcj9WY7I7JfXF2DnwYpO/32IYUNYaAhiohxI6huG9OQoZKbFYvLoBCQnRYoc050+OVWDF988gdZecsmv955sBYHb40WLswMtzg5U17SioOg68K9yAMCwlBjMnZmCxx4YhFCH3A/K+0Yn4OXvT8CPX8/vFVdCeMphkqKyRry6sRBff+4APj5aJfpZ47Pi8NJ3x8Ow6X/6waBNdrXOiV+s/RSr3y5Ae4fcCnp/diK+8dgQsfmqYNCK2HWoAj95/bho1EvnDUNWWqzYfBUwaIXkF9bil7kFYvMNw4bvLcwSm68CBq2YfUersD2vTGz+uMw4TB2bJDbfbAxaQWvfP4/Glnax+fMfTBWbbTYGraDGlna8v7dUbP6k0QnonxAhNt9MDFpR2/eXweOR+Z2XYbMhZ6yevxpn0IqqqW/DqaJ6sfmTRiWIzTYTg1bYJ6euic0ePbSP2GwzMWiFnSlpEJsd3ycMURH63fnAoBV2qbJZdH5Kv+DcIBVMDFphNded8HjlboaMjnKIzTYLg1ZYh9uLVqfcbZ+R4SFis83CoBXnape7tyPUrt//fv3+RroRvOPT6dLvpn8GrbgwwZv/WwRPZ8zCoBXmsBuICJO7tFZd4xSbbRYGrbCkuHBIPWTS4faiuqZVZriJGLTChgyKEpt97lID3EL3ipiJQStsRLrcr6dPnqsTm20mBq2wKWPk7ojbn18tNttMDFpRAxMjkCn0/F9pVTMKi+Xu5DMTg1bUvFmpYl8I39tZLDNYAQxaQXGxoXjyizKPSRVXNGHP4UqR2Spg0ApauTALEWGBv8/C4/XiNxtOa3l14yYGrZg50wbh4SkDRWa/tfXCje3INMagFTJ1bBJ+tHiUyOwdB8qxUeNz55v0e2TBop6YkYIffHMkQgS2v/1bXhnWvFMY8LkqYtAm658QgacXZmH6hH4Bn+32ePHmn8+KbomgGgZtkozUGMyblYo505JvvQUrkC5cbsTL6wtwvrQx4LNVxqAFGYYNYQ4DsVEOJMWFIy05CllpsZg8OhHJSTIbvVytc2LD9ovYcaBc66sZnWHQfnh2yRhlXgB6vrQRW/5Rir1HKkV3MFUdg7aw0qpm5B2/gn1Hq3Dhcu86tegMg7YIt8eL4vImnCmuR0FRPfILa3ClVr8b9P3FoBXm9nhx7FQN9h6pRN5/rvBd3z5g0AoLMWyYkp2IKdmJeKalA4dOXsHHR6vx7/9eheB2HZbGoC0iOtKOR3OS8WhOMkoqmvDOR8XYe0Tfm4x6ir/6tqD05Gi8sCIbv101EQMS9dznuae4QvvhzhdvhjoMREXYER8bhsy0GIwZ1hezJg1AdKTMf+aJoxKw7oX78fwbJ7R9pKq7uEIHkKvdg7oGF4rKGrHzYAV+/afTmP/Df+K1jYVobu0Q+czYKAfWrJqIaeP1fW9KdzBoYa52D7btu4zFLx4U+zW0w27g598eh+zhfUXmWwmDDpJrdW1YteYYSiqaROaHOgz8auUXkBQXLjLfKhh0EDU0t+Onb5wQPf14fvmYXvEK5M4w6CArq27Ba++dEZs/PiseCx7S97VtXWHQJthzuAKHP70qNn/J3Az0idZvM3NfMGiTvLrxDNpcMnfFRUfasezJDJHZqmPQJqmuacWmXXLP+D0+IwUp/fV7h0pXGLSJNu0qQU19m8jsEMOGpfN63yrNoE3kdLnxxw+LxOY/OHkAMlJjxOariEGbbMeBclRek9mn2WYDls/vXas0gzZZh9uLDdvlVumcsUnIzugrNl81DFoBuw9Xir5kc8WC4WKzVcOgFeDxeJH7wQWx+eMy43DfaD1fVn8nBq2I/fnVOFMit2fzigXDxbbnVQmDVsgftpwXm52ZFouZE/qLzVcFg1ZIfmEt8gtrxeYvm58BQ2DvPJUwaMWs3XJObPbgAVGYnZMsNl8FDFoxZ0sakHdc7oU+S+YOFdlLTxX6/s0sbN3WC/AI7UvXPyECc2emiMxWAYNWUGlVM3Ydquj6D/bQt748FOECr7xQAYNW1PoPi8Q2XYyLDcVTDw8WmW02Bq2oK7VObNt3WWz+otlDEBOp30MADFph7350ES1OmecPoyPtWDQnXWS2mRi0wuqb2rF5zyWx+V95aDDi+4SJzTcDg1bc5t0luN7oEpkdHhqCxY8PFZltFgatuNY2N97dIfio1vRBWu2Px6At4IN9l1EttLm5w25g6dxhIrPNwKAtoL3Dg/V/lXsI4JGcgUhPjhabH0wM2iJ2H64Q20bMsNmwXJNtDxi0RXg8Xrwl+BDA9An9MCK9j9j8YLHNWLbbci83mDMtWZnXqflq16EKrH67wO85v39uCkYNNS+8320+i7/8Xe5Sor+4QlvMuq1yDwHogEFbzPEztcg/XWP2YSiLQVvQ2q3n+RasTjBoCzpb0oD9gg8BWBmDtqjcbXIPAVgZg7ao0qrm297ARTdY8rIdUWe4QpNWGDRphUGTVhg0aYVBk1YYNGmFQZNWGDRphUGTVhg0aYVBk1YYNGmFQZNWGDRphUGTVhg0acXIy52t93u+qFfhCk1aYdCkFQZNWmHQpBUDAPjFkHSQlzvbxhWatMKgSSu3guZpB1nZzX65QpNWbguaqzRZ0We75QpNWvlc0FylyUru7JUrNGnlrkFzlSYruFunna7QjJpU1lmf9zzlYNSkont1yXNo0kqXQXOVJpV01aNPKzSjJhX40qHPpxyMmszka3/dOodm1GSG7nTX7S+FjJqCqbu9+RUn33FIUnq6cPp12Y6rNUnwpyu/r0Mzagokf3sKaIw8BaGeCtTCKLK6MmzyVaB/woueLjBs6ozUqWrQzn8ZNwXj+9b/APcGLSupi9lHAAAAAElFTkSuQmCC">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#eff2f7">
+<title>RoundNote</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700;900&family=DM+Mono:wght@400;500&display=swap');
+:root{
+  --bg:#eff2f7;
+  --surface:#ffffff;
+  --surface2:#e8ecf4;
+  --line:#7a8aaa;
+  --line-thin:#c8d0e0;
+  --text:#1a2540;
+  --text2:#4a5878;
+  --text3:#8a96b0;
+
+  --ok:#2e7d5e;
+  --ok-bg:#e0f0ea;
+  --warn:#b06a28;
+  --warn-bg:#f5e8d8;
+  --ng:#a03040;
+  --ng-bg:#f2e0e4;
+  --done:#3e63b9;
+  --done-bg:#dde5f5;
+  --idle:#e8ecf4;
+  --accent:#3e63b9;
+
+  --radius:0px;
+  --radius-lg:0px;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html{height:-webkit-fill-available;}
+body{
+  min-height:100vh;min-height:-webkit-fill-available;
+  background:var(--bg);color:var(--text);
+  font-family:'DM Sans',sans-serif;-webkit-text-size-adjust:100%;
+  padding-bottom:calc(90px + env(safe-area-inset-bottom));
+  font-size:15px;line-height:1.55;
+}
+
+/* ── SAVE FOOTER ── */
+.save-footer{
+  position:fixed;bottom:0;left:0;right:0;z-index:95;
+  background:var(--surface);border-top:1px solid var(--line);
+  padding:10px 14px;padding-bottom:calc(10px + env(safe-area-inset-bottom));
+  display:none;gap:8px;
+}
+.save-footer.show{display:flex;}
+.save-footer.kb-hide{display:none !important;}
+.btn-save-main{
+  flex:1;margin:0;display:flex;align-items:center;justify-content:center;gap:6px;
+}
+.btn-clear-icon{
+  width:52px;flex-shrink:0;border:1px solid var(--line);background:var(--surface);
+  border-radius:0;color:var(--text);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+}
+.btn-clear-icon:active{background:var(--ng);color:#fff;border-color:var(--ng);}
+
+/* ── SPLASH ── */
+.splash{
+  position:fixed;inset:0;z-index:9999;
+  background:var(--bg);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:18px;
+  animation:splashFade 1.6s ease forwards;
+  pointer-events:none;
+}
+.splash-logo{
+  font-size:48px;font-weight:700;color:var(--text);font-family:'DM Sans',sans-serif;
+  letter-spacing:-.04em;line-height:1;
+  opacity:0;
+  animation:logoIn .6s .1s ease forwards;
+}
+.splash-r{
+  color:var(--accent);
+  display:inline-block;
+  animation:letterPop .6s .4s cubic-bezier(0.34,1.56,0.64,1) backwards;
+}
+.splash-sub{
+  font-size:11px;font-weight:400;color:var(--text3);font-family:'DM Mono',monospace;
+  letter-spacing:.25em;text-transform:uppercase;
+  opacity:0;
+  animation:tagIn .6s .7s ease forwards;
+}
+.splash-bar{
+  width:120px;height:2px;background:var(--surface2);
+  overflow:hidden;margin-top:8px;
+  opacity:0;animation:tagIn .5s .5s ease forwards;
+}
+.splash-bar-fill{
+  width:0%;height:100%;background:var(--accent);
+  animation:splashBar .9s ease .4s forwards;
+}
+@keyframes splashFade{
+  0%,75%{opacity:1;}
+  100%{opacity:0;visibility:hidden;}
+}
+@keyframes logoIn{
+  from{opacity:0;transform:translateY(8px);}
+  to  {opacity:1;transform:translateY(0);}
+}
+@keyframes letterPop{
+  from{transform:scale(0.6) rotate(-8deg);opacity:0;}
+  to  {transform:scale(1) rotate(0);opacity:1;}
+}
+@keyframes tagIn{
+  from{opacity:0;letter-spacing:.4em;}
+  to  {opacity:1;letter-spacing:.25em;}
+}
+@keyframes splashBar{
+  to{width:100%;}
+}
+
+/* ── HEADER ── */
+header{
+  position:sticky;top:0;z-index:100;
+  background:var(--surface);border-bottom:1px solid var(--line);
+  padding:14px 16px;padding-top:calc(14px + env(safe-area-inset-top));
+  display:flex;align-items:center;gap:10px;
+}
+header h1{font-size:18px;font-weight:700;flex:1;color:var(--text);letter-spacing:.02em;}
+.logo-main{font-size:20px;font-weight:700;letter-spacing:-.02em;font-family:'DM Sans',sans-serif;}
+.logo-main .logo-r{color:var(--accent);}
+.header-date{
+  font-family:'DM Mono',monospace;font-size:11px;
+  color:var(--text2);text-align:right;white-space:nowrap;line-height:1.5;
+}
+.hbadge{
+  background:var(--text);color:#fff;font-size:12px;font-weight:700;
+  padding:3px 10px;border-radius:0;border:1px solid var(--line);
+}
+
+/* ── TABS ── */
+.tabs{
+  display:flex;background:var(--surface);border-bottom:1px solid var(--line);
+  position:sticky;top:59px;z-index:99;
+}
+.tab{
+  flex:1;padding:8px 2px 10px;text-align:center;font-size:11px;font-weight:700;
+  color:var(--text2);cursor:pointer;border-bottom:3px solid transparent;transition:all .1s;
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+}
+.tab.active{color:var(--text);border-color:var(--text);font-weight:700;}
+.tab-icon{width:20px;height:20px;display:block;}
+
+/* ── PAGES ── */
+.page{display:none;padding:16px;}
+.page.active{display:block;}
+
+/* ── CARD ── */
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:0;
+  padding:16px;margin-bottom:14px;
+}
+.card-title{
+  font-size:13px;font-weight:500;color:var(--text);font-family:'DM Sans',sans-serif;letter-spacing:.02em;
+  margin-bottom:14px;display:flex;align-items:center;gap:8px;
+  padding-bottom:10px;border-bottom:1px solid var(--line-thin);
+}
+.ct-icon{width:18px;height:18px;flex-shrink:0;}
+
+/* ── FORM ── */
+label{font-size:12px;color:var(--text2);display:block;margin-bottom:6px;font-weight:500;font-family:'DM Mono','DM Sans',sans-serif;letter-spacing:.05em;text-transform:uppercase;}
+select,input[type=text]{
+  width:100%;background:var(--surface);border:1px solid var(--line);
+  border-radius:0;color:var(--text);font-family:inherit;font-size:16px;
+  padding:10px 12px;-webkit-appearance:none;appearance:none;min-height:44px;
+  font-weight:500;
+}
+select:focus,input[type=text]:focus{outline:none;border-color:var(--accent);border-width:1px;}
+select{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M0 0l6 8 6-8z' fill='%23111'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;padding-right:34px;
+}
+.form-row{margin-bottom:12px;}
+.form-row:last-child{margin-bottom:0;}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px;}
+
+/* ── BED DIAGRAM ── */
+.bed-wrap{
+  display:flex;flex-direction:column;align-items:center;
+  padding:4px 0 8px;
+}
+.bed-label-top,
+.bed-label-bottom{
+  font-size:12px;font-weight:700;color:var(--text);letter-spacing:.15em;
+  text-align:center;
+}
+.bed-label-top{margin-bottom:10px;}
+.bed-label-bottom{margin-top:10px;}
+.bed-row{display:flex;align-items:center;gap:0;}
+.bed-side-label{
+  font-size:11px;color:var(--text);font-weight:700;width:34px;text-align:center;
+  writing-mode:vertical-rl;letter-spacing:.15em;line-height:1.3;
+}
+
+/* ── BED FRAME ── */
+.bed-frame{
+  position:relative;
+  width:220px;height:300px;
+  flex-shrink:0;
+}
+.bed-frame svg{width:100%;height:100%;display:block;}
+
+/* ── CASTER BUTTONS ── */
+.caster-btn{
+  position:absolute;
+  width:60px;height:60px;
+  border-radius:0;
+  border:1px solid var(--line);
+  background:var(--surface);
+  cursor:pointer;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;
+  transition:all .15s;
+  -webkit-appearance:none;
+  font-family:inherit;
+}
+.caster-btn .c-label{font-size:11px;font-weight:700;color:#ffffff;transition:color .15s;letter-spacing:.02em;text-align:center;line-height:1.2;}
+
+/* 位置（患者視点：頭が上、画面左=患者の右、画面右=患者の左） */
+.caster-btn.head-right{ top:10px;   left:10px; }
+.caster-btn.head-left { top:10px;   right:10px; }
+.caster-btn.foot-right{ bottom:10px;left:10px; }
+.caster-btn.foot-left { bottom:10px;right:10px; }
+
+/* 状態色 */
+.caster-btn.s-active .c-label{color:#fff;}
+
+.caster-btn:active{transform:scale(.93);}
+
+/* ── キャスター詳細 ── */
+.detail-row{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 12px;
+  background:var(--surface);
+  border-left:2px solid var(--line-thin);
+  margin-bottom:4px;
+}
+.detail-pos{
+  font-size:10px;font-weight:500;color:var(--text3);
+  min-width:52px;flex-shrink:0;
+  font-family:'DM Mono',monospace;letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.detail-chips{display:flex;gap:5px;flex-wrap:wrap;flex:1;}
+.detail-chip{
+  padding:3px 10px;font-size:11px;font-weight:400;
+  border:1px solid var(--line-thin);background:transparent;
+  color:var(--text2);cursor:pointer;transition:all .12s;
+  font-family:'DM Mono',monospace;letter-spacing:.02em;
+}
+.detail-chip:active{background:var(--surface2);}
+.detail-chip.sel-warn{background:var(--warn);border-color:var(--warn);color:#fff;}
+.detail-chip.sel-ng  {background:var(--ng);  border-color:var(--ng);  color:#fff;}
+
+/* ── SUMMARY CHIPS ── */
+.caster-summary{
+  display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;
+}
+.c-chip{
+  background:var(--surface);border:1px solid var(--line);border-radius:0;
+  padding:10px 12px;display:flex;justify-content:space-between;align-items:center;
+}
+.c-chip-name{font-size:12px;color:var(--text);font-weight:700;}
+.c-chip-val{font-size:12px;font-weight:700;}
+.c-chip-val.s-正常 {color:var(--ok);}
+.c-chip-val.s-要注意{color:var(--warn);}
+.c-chip-val.s-要交換{color:var(--ng);}
+.c-chip-val.s-交換済み{color:var(--done);}
+.c-chip-val.s-未選択{color:var(--text2);}
+
+/* ── BUTTONS ── */
+.btn{
+  display:block;width:100%;padding:14px;border-radius:0;
+  font-size:14px;font-weight:500;cursor:pointer;
+  text-align:center;transition:all .15s;font-family:'DM Sans',sans-serif;
+  border:1px solid transparent;
+  letter-spacing:.01em;
+}
+.btn:active{opacity:.85;}
+.btn-primary{background:var(--text);color:#fff;border-color:var(--text);}
+.btn-success{background:var(--ok);color:#fff;border-color:var(--ok);}
+.btn-danger {background:var(--ng);color:#fff;border-color:var(--ng);}
+.btn-outline{background:var(--surface);color:var(--text);font-size:13px;padding:10px;font-weight:700;}
+.btn-sm{font-size:13px;padding:10px 14px;width:auto;display:inline-block;}
+.mt8{margin-top:8px;}
+
+/* ── LIST - COMPACT ── */
+.sort-bar{
+  display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap;align-items:center;
+}
+.sort-chip{
+  font-size:11px;font-weight:400;padding:5px 12px;
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:0;cursor:pointer;color:var(--text2);
+  transition:all .12s;font-family:'DM Mono',monospace;letter-spacing:.03em;
+}
+.sort-chip.active{background:var(--text);color:var(--bg);}
+.sort-chip-action{
+  font-size:11px;font-weight:700;padding:6px 10px;
+  color:var(--text2);cursor:pointer;margin-left:auto;
+  text-decoration:underline;
+}
+.sort-chip-action:active{color:var(--text);}
+
+.rec-compact{
+  background:var(--surface);border:1px solid var(--line-thin);border-radius:0;
+  margin-bottom:6px;overflow:hidden;box-shadow:0 1px 3px rgba(60,80,140,0.05);
+}
+.rec-compact.expanded{border-color:var(--line);}
+
+.rec-head{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 14px;cursor:pointer;gap:8px;
+  min-height:46px;transition:background .12s;
+}
+.rec-head:active{background:var(--surface2);}
+.rec-head-l{
+  display:flex;align-items:center;gap:8px;flex:1;min-width:0;
+}
+.rec-head-r{
+  display:flex;align-items:center;gap:8px;flex-shrink:0;
+}
+.rec-head-hospital{
+  font-size:12px;font-weight:700;color:var(--text);
+  max-width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.rec-head-loc{
+  font-size:11px;font-weight:400;color:var(--text3);font-family:'DM Mono',sans-serif;
+  font-family:'DM Sans','Noto Sans JP',sans-serif;
+}
+.rec-head-date{
+  font-size:10px;color:var(--text2);font-weight:600;
+  font-family:'DM Sans','Noto Sans JP',sans-serif;
+}
+.rec-chevron{
+  width:14px;height:14px;color:var(--text2);
+  transition:transform .2s;
+}
+.rec-chevron.exp{transform:rotate(180deg);}
+
+/* ミニチップ（キャスター4色） */
+.mini-chips{display:inline-flex;gap:2px;}
+.mini-chip{
+  display:inline-block;width:10px;height:10px;
+  border:1px solid var(--line);border-radius:0;
+  background:#fff;
+}
+.mini-chip.s-正常 {background:var(--ok);border-color:var(--ok);}
+.mini-chip.s-要注意{background:var(--warn);border-color:var(--warn);}
+.mini-chip.s-要交換{background:var(--ng);border-color:var(--ng);}
+.mini-chip.s-交換済み{background:var(--done);border-color:var(--done);}
+
+.mini-info-group{display:inline-flex;gap:6px;align-items:center;}
+.mini-info{
+  display:inline-flex;align-items:center;gap:1px;
+  font-size:10px;font-weight:700;color:var(--text2);
+}
+
+/* 展開時の本体 */
+.rec-body{
+  padding:10px 12px 12px;border-top:1.5px solid var(--line-thin);
+  background:var(--surface2);
+}
+.rec-meta-line{
+  display:flex;gap:8px;font-size:11px;margin-bottom:5px;
+  padding:3px 0;
+}
+.rml-lbl{
+  flex-shrink:0;font-weight:700;color:var(--text2);width:32px;
+}
+.rml-val{color:var(--text);font-weight:500;line-height:1.5;}
+
+.rec-casters{
+  display:grid;grid-template-columns:1fr 1fr;gap:4px;
+  margin:8px 0;
+}
+.rc-item{
+  font-size:11px;display:flex;justify-content:space-between;align-items:center;
+  background:var(--surface);border:1px solid var(--line);border-radius:0;padding:4px 8px;
+}
+.rc-pos{color:var(--text2);font-weight:600;}
+.rc-val{font-weight:700;}
+
+.rec-parts{
+  display:flex;gap:4px;flex-wrap:wrap;margin:6px 0;
+}
+.rec-part-chip{
+  font-size:10px;padding:3px 8px;border:1px solid var(--line);
+  border-radius:0;background:var(--surface);color:var(--text);font-weight:600;
+}
+.rec-part-chip b{color:var(--warn);margin-left:3px;}
+
+.rec-photos{display:flex;gap:5px;margin:8px 0;overflow-x:auto;padding-bottom:2px;}
+.rec-photos img{
+  width:56px;height:56px;border-radius:0;border:1px solid var(--line);
+  object-fit:cover;cursor:pointer;flex-shrink:0;
+}
+
+.rec-memo{
+  font-size:11px;color:var(--text);margin-top:6px;padding:6px 8px;
+  background:var(--surface);border:1.5px solid var(--line-thin);border-radius:0;
+  font-weight:500;
+}
+
+.rec-foot{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-top:10px;padding-top:8px;border-top:1.5px solid var(--line-thin);
+}
+.rec-date{font-size:11px;color:var(--text2);font-weight:500;}
+
+.rec-action-btns-inline{display:flex;gap:6px;}
+
+/* カラー・バッジ・アクションボタン */
+.rc-val.s-正常 {color:var(--ok);}
+.rc-val.s-要注意{color:var(--warn);}
+.rc-val.s-要交換{color:var(--ng);}
+.rc-val.s-交換済み{color:var(--done);}
+.worst-badge{
+  font-size:10px;font-weight:500;padding:3px 8px;border-radius:0;
+  border:none;white-space:nowrap;flex-shrink:0;
+  font-family:'DM Mono',monospace;
+}
+.wb-正常 {background:var(--ok);  color:#fff;border-color:var(--ok);}
+.wb-要注意{background:var(--warn);color:#fff;border-color:var(--warn);}
+.wb-要交換{background:var(--ng);  color:#fff;border-color:var(--ng);}
+.wb-交換済み{background:var(--done);color:#fff;border-color:var(--done);}
+.wb-未選択{background:var(--surface);color:var(--text2);}
+.act-btn{
+  width:32px;height:32px;border:1px solid var(--line-thin);border-radius:0;
+  background:var(--surface);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;color:var(--text2);
+  padding:0;transition:all .12s;
+}
+.act-btn svg{width:16px;height:16px;}
+.act-btn:active{transform:scale(.92);}
+.act-del:active{background:var(--ng);color:#fff;border-color:var(--ng);}
+.act-edit:active{background:var(--accent);color:#fff;border-color:var(--accent);}
+
+/* ── STATS ── */
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
+.stats-grid.stats-5{gap:6px;}
+.stat-box{
+  background:var(--surface);border:1px solid var(--line-thin);border-radius:0;
+  padding:14px 10px;text-align:center;box-shadow:0 1px 3px rgba(60,80,140,0.05);
+}
+.stats-5 .stat-box{padding:12px 4px;}
+.stat-num{font-size:30px;font-weight:700;line-height:1;}
+.stats-5 .stat-num{font-size:20px;}
+.stat-num .unit{font-size:11px;font-weight:700;margin-left:1px;color:var(--text2);}
+.stat-label{font-size:11px;color:var(--text2);margin-top:5px;font-weight:700;}
+.stats-5 .stat-label{font-size:10px;margin-top:4px;}
+.stat-clickable{cursor:pointer;transition:background .1s;}
+.stat-clickable:active{background:var(--surface2);}
+.tap-hint{color:var(--ng);font-weight:700;margin-left:1px;}
+
+/* 病院別要交換率 */
+.hosp-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:12px 0;border-bottom:1px solid var(--line-thin);
+  gap:10px;cursor:pointer;transition:background .1s;
+}
+.hosp-row:active{background:var(--surface2);}
+.hosp-row:last-child{border-bottom:none;}
+.hosp-name{font-size:13px;font-weight:700;color:var(--text);flex:1;}
+.hosp-stat{display:flex;flex-direction:column;align-items:flex-end;gap:1px;}
+.hosp-rate{font-size:16px;font-weight:700;}
+.hosp-sub{font-size:10px;color:var(--text2);font-weight:500;}
+.hosp-rate.r-high{color:var(--ng);}
+.hosp-rate.r-mid{color:var(--warn);}
+.hosp-rate.r-low{color:var(--ok);}
+.hosp-chevron{width:16px;height:16px;color:var(--text2);flex-shrink:0;}
+
+/* ── FILTER ── */
+.filter-bar{display:flex;gap:8px;margin-bottom:12px;}
+.filter-bar select{flex:1;font-size:13px;padding:9px 11px;min-height:40px;}
+
+/* ── MASTER EDITOR ── */
+.part-row{display:flex;align-items:center;gap:6px;padding:10px 0;border-bottom:1.5px solid var(--line-thin);}
+.part-row:last-child{border-bottom:none;}
+.part-label{flex:1;font-size:14px;color:var(--text);font-weight:500;}
+.part-input{
+  flex:1;background:var(--surface);border:none;border-bottom:2px solid var(--accent);
+  color:var(--text);font-family:inherit;font-size:14px;padding:3px 4px;
+  min-height:unset;border-radius:0;-webkit-appearance:none;
+}
+.part-input:focus{outline:none;}
+.icon-btn{
+  background:none;border:1px solid var(--line);cursor:pointer;font-size:14px;padding:4px;
+  min-width:34px;min-height:34px;display:flex;align-items:center;justify-content:center;
+  border-radius:0;color:var(--text);font-weight:700;
+}
+.icon-btn:active{background:var(--text);color:#fff;}
+.add-row{display:flex;gap:8px;margin-top:12px;}
+.add-row input{flex:1;font-size:14px;padding:9px 11px;}
+
+/* ── EMPTY ── */
+.empty{text-align:center;padding:48px 20px;color:var(--text2);font-size:14px;font-weight:500;}
+.empty-icon{font-size:42px;margin-bottom:10px;}
+
+/* ── TOAST ── */
+#toast{
+  position:fixed;bottom:calc(24px + env(safe-area-inset-bottom));
+  left:50%;transform:translateX(-50%) translateY(80px);
+  background:var(--text);color:#fff;font-size:13px;font-weight:700;
+  padding:12px 22px;border-radius:0;z-index:999;
+  transition:transform .3s;white-space:nowrap;
+  border:2px solid var(--text);
+}
+#toast.show{transform:translateX(-50%) translateY(0);}
+#toast.t-warn{background:var(--warn);border-color:var(--warn);}
+#toast.t-err {background:var(--ng);border-color:var(--ng);}
+
+/* ── PARTS TABLE ── */
+.parts-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -4px;padding:0 4px;}
+table.pt{width:100%;border-collapse:collapse;min-width:240px;}
+table.pt th{font-size:11px;color:var(--text);font-weight:700;padding:6px 3px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap;}
+table.pt th:first-child{text-align:left;padding-left:4px;}
+table.pt td{padding:5px 3px;vertical-align:middle;}
+table.pt td:first-child{font-size:13px;padding-left:4px;word-break:break-all;color:var(--text);font-weight:500;}
+.sev-chip{
+  display:block;width:100%;min-height:38px;line-height:38px;border-radius:0;
+  border:1px solid var(--line);background:var(--surface);color:var(--text);
+  font-size:11px;font-weight:700;text-align:center;cursor:pointer;transition:all .15s;
+  padding:0;min-width:38px;-webkit-appearance:none;appearance:none;font-family:inherit;
+}
+.sev-chip.a-軽微 {border-color:var(--ok);   background:var(--ok);  color:#fff;}
+.sev-chip.a-中程度{border-color:var(--warn); background:var(--warn);color:#fff;}
+.sev-chip.a-重大  {border-color:var(--ng);   background:var(--ng);  color:#fff;}
+
+textarea{
+  width:100%;background:var(--surface);border:1px solid var(--line);
+  border-radius:0;color:var(--text);font-family:inherit;font-size:16px;
+  padding:10px 12px;resize:vertical;min-height:72px;-webkit-appearance:none;
+}
+textarea:focus{outline:none;border-color:var(--accent);border-width:1px;}
+
+/* ── INFO CARD ── */
+.info-card{
+  background:var(--warn-bg);border-color:var(--line);
+}
+.info-card .card-title{border-bottom-color:var(--line);}
+.info-card p{font-size:12px;color:var(--text);line-height:1.7;font-weight:500;}
+
+/* ── PHOTO FIELD ── */
+.photo-wrap{
+  display:flex;flex-wrap:wrap;gap:8px;
+}
+.photo-thumb{
+  width:76px;height:76px;border-radius:0;border:1px solid var(--line);
+  background-size:cover;background-position:center;position:relative;
+  cursor:pointer;
+}
+.photo-remove{
+  position:absolute;top:-6px;right:-6px;width:22px;height:22px;
+  background:var(--ng);color:#fff;border:1px solid var(--line);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;
+  cursor:pointer;line-height:1;
+}
+.photo-add{
+  width:76px;height:76px;border-radius:0;border:2.5px dashed var(--line);
+  background:var(--surface2);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  cursor:pointer;font-size:11px;font-weight:400;color:var(--text3);font-family:'DM Mono',sans-serif;gap:2px;
+}
+.photo-add-icon{font-size:22px;line-height:1;}
+
+input[type=file]{display:none;}
+
+.photo-count{font-size:11px;color:var(--text2);font-weight:700;margin-bottom:8px;}
+
+/* ── STORAGE METER ── */
+.storage-meter{
+  background:var(--surface);border:1px solid var(--line);border-radius:0;
+  padding:12px;margin-bottom:12px;
+}
+.storage-top{display:flex;justify-content:space-between;font-size:12px;font-weight:700;margin-bottom:6px;}
+.storage-bar{background:var(--surface2);border:1px solid var(--line);border-radius:0;height:10px;overflow:hidden;}
+.storage-bar > div{height:100%;background:var(--ok);transition:all .3s;}
+.storage-bar > div.warn{background:var(--warn);}
+.storage-bar > div.full{background:var(--ng);}
+.storage-note{font-size:11px;color:var(--text2);margin-top:6px;line-height:1.5;}
+
+/* ── PHOTO MODAL ── */
+.modal-backdrop{
+  position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:998;
+  display:flex;align-items:center;justify-content:center;padding:20px;
+  opacity:0;pointer-events:none;transition:opacity .2s;
+}
+.modal-backdrop.show{opacity:1;pointer-events:auto;}
+.modal-backdrop img{max-width:100%;max-height:100%;border-radius:0;}
+.modal-close{
+  position:absolute;top:calc(20px + env(safe-area-inset-top));right:20px;
+  width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--line);
+  color:var(--text);font-size:20px;font-weight:700;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* ── HOSPITAL DETAIL MODAL ── */
+.hosp-modal{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:997;
+  display:none;align-items:flex-end;justify-content:center;
+}
+.hosp-modal.show{display:flex;}
+.hosp-modal-card{
+  background:var(--bg);border-top:1px solid var(--line);
+  border-radius:0 4px 0 0;width:100%;max-width:600px;
+  height:100vh;
+  display:flex;flex-direction:column;
+  animation:slideUp .2s ease;
+}
+@keyframes slideUp{from{transform:translateY(100%);}to{transform:translateY(0);}}
+.hosp-modal-header{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 16px 12px;border-bottom:1px solid var(--line-thin);
+  position:sticky;top:0;background:var(--surface);
+}
+.hosp-modal-title{font-size:16px;font-weight:500;flex:1;font-family:'DM Sans',sans-serif;letter-spacing:-.01em;}
+.hosp-modal-body{overflow-y:auto;padding:16px;}
+.detail-section{margin-bottom:18px;}
+.detail-section:last-child{margin-bottom:4px;}
+.detail-title{
+  font-size:11px;font-weight:400;color:var(--text3);font-family:'DM Mono',sans-serif;letter-spacing:.1em;
+  text-transform:uppercase;margin-bottom:8px;
+  padding-bottom:6px;border-bottom:1.5px solid var(--line-thin);
+}
+.detail-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.detail-stat{
+  background:var(--surface2);border:1.5px solid var(--line-thin);
+  border-radius:0;padding:10px 12px;
+}
+.detail-stat-num{font-size:22px;font-weight:700;line-height:1;}
+.detail-stat-lbl{font-size:11px;color:var(--text2);font-weight:600;margin-top:3px;}
+
+/* 要交換率ヒーロー */
+.rate-hero{
+  background:var(--surface2);border:1px solid var(--line);
+  border-radius:0;padding:18px 16px;text-align:center;
+  margin-bottom:10px;
+}
+.rate-hero-label{
+  font-size:11px;font-weight:400;color:var(--text3);font-family:'DM Mono',sans-serif;
+  letter-spacing:.15em;margin-bottom:6px;
+}
+.rate-hero-num{
+  font-size:44px;font-weight:700;color:var(--ng);
+  line-height:1;letter-spacing:-.02em;
+}
+.rate-hero-unit{font-size:22px;font-weight:700;margin-left:2px;}
+.rate-hero-sub{
+  font-size:12px;color:var(--text2);font-weight:500;
+  margin-top:8px;
+}
+
+/* キャスター内訳 */
+.state-breakdown{
+  display:grid;grid-template-columns:1fr 1fr 1fr 1fr;
+  gap:6px;margin-bottom:10px;
+  border:1px solid var(--line);border-radius:0;overflow:hidden;
+}
+.sb-item{
+  padding:10px 4px;text-align:center;
+  border-right:1.5px solid var(--line);
+}
+.sb-item:last-child{border-right:none;}
+.sb-num{font-size:22px;font-weight:700;line-height:1;}
+.sb-unit{font-size:10px;font-weight:700;margin-left:1px;opacity:.75;}
+.sb-lbl{
+  font-size:10px;font-weight:700;margin-top:4px;
+  letter-spacing:.05em;
+}
+.sb-ng   {background:var(--ng-bg);}
+.sb-ng   .sb-num, .sb-ng   .sb-lbl {color:var(--ng);}
+.sb-warn {background:var(--warn-bg);}
+.sb-warn .sb-num, .sb-warn .sb-lbl {color:var(--warn);}
+.sb-done {background:var(--done-bg);}
+.sb-done .sb-num, .sb-done .sb-lbl {color:var(--done);}
+.sb-ok   {background:var(--ok-bg);}
+.sb-ok   .sb-num, .sb-ok   .sb-lbl {color:var(--ok);}
+
+.records-count-note{
+  font-size:12px;color:var(--text2);text-align:center;
+  font-weight:500;padding:6px 0;
+}
+.records-count-note strong{color:var(--text);font-weight:700;}
+
+/* ── 履歴ピッカー ── */
+.hist-modal-backdrop{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:997;
+  display:none;align-items:center;justify-content:center;
+  padding:24px;
+}
+.hist-modal-backdrop.show{display:flex;}
+.hist-modal-card{
+  background:var(--surface);border:1px solid var(--line-thin);
+  border-radius:0;width:100%;max-width:400px;
+  max-height:70vh;display:flex;flex-direction:column;
+  overflow:hidden;
+  animation:fadeIn .15s ease;box-shadow:0 4px 20px rgba(30,40,100,0.12);
+}
+@keyframes fadeIn{from{opacity:0;transform:scale(.95);}to{opacity:1;transform:scale(1);}}
+.hist-wrap{display:flex;flex-direction:row;align-items:stretch;width:100%;}
+.hist-input{flex:1;border-radius:0 !important;border-right:none !important;}
+.hist-btn{
+  width:40px;flex-shrink:0;
+  border:1px solid var(--line);border-left:none;
+  border-radius:0;background:var(--surface2);
+  font-size:14px;color:var(--text2);cursor:pointer;
+  font-family:inherit;
+}
+.hist-btn:active{background:var(--surface);}
+.hist-pick-item{
+  padding:14px 16px;border-bottom:1px solid var(--line-thin);
+  font-size:15px;font-weight:500;cursor:pointer;color:var(--text);
+}
+.hist-pick-item:last-child{border-bottom:none;}
+.hist-pick-item:active{background:var(--surface2);}
+.hist-pick-empty{
+  padding:24px 16px;text-align:center;
+  color:var(--text2);font-size:13px;
+}
+
+/* ── 要交換ベッドリスト ── */
+.ng-bed-item{
+  background:var(--ng-bg);border:1.5px solid var(--ng);
+  border-radius:0;padding:10px 12px;margin-bottom:6px;
+}
+.ng-bed-item:last-child{margin-bottom:0;}
+.ng-bed-top{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:10px;margin-bottom:4px;
+}
+.ng-bed-loc{
+  font-size:13px;font-weight:500;color:var(--text);font-family:'DM Sans',sans-serif;letter-spacing:.02em;
+  font-family:'DM Sans','Noto Sans JP',sans-serif;
+}
+.ng-bed-model{
+  font-size:11px;color:var(--text2);font-weight:600;
+  max-width:50%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.ng-bed-pos{
+  font-size:12px;color:var(--ng);font-weight:700;
+}
+.ng-bed-pos-lbl{color:var(--text2);font-weight:500;}
+.detail-list-item{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:8px 10px;background:var(--surface2);
+  border:1.5px solid var(--line-thin);border-radius:0;margin-bottom:6px;
+}
+.detail-list-item:last-child{margin-bottom:0;}
+.detail-list-name{font-size:13px;font-weight:600;color:var(--text);flex:1;}
+.detail-list-val{font-size:13px;font-weight:500;color:var(--text);font-family:'DM Sans',sans-serif;letter-spacing:.02em;}
+.detail-list-val.accent{color:var(--accent);}
+
+/* ── LEGEND/HELP NOTE ── */
+.help-note{
+  background:var(--surface2);border:1px solid var(--line);
+  border-radius:0;padding:8px 12px;font-size:11px;
+  color:var(--text);line-height:1.5;margin-bottom:10px;font-weight:500;
+}
+.required{color:var(--ng);font-weight:700;}
+.btn-primary.btn-incomplete{
+  background:var(--surface2);color:var(--text2);
+  border-color:var(--line-thin);box-shadow:none;
+}
+</style>
+</head>
+<body>
+
+<!-- ── SPLASH ── -->
+<div class="splash" id="splash">
+  <div class="splash-logo">
+    <span class="splash-r">R</span>oundNote
+  </div>
+  <div class="splash-sub">round note</div>
+  <div class="splash-bar"><div class="splash-bar-fill"></div></div>
+</div>
+
+<header>
+  <h1>
+    <span class="logo-main"><span class="logo-r">R</span>oundNote</span>
+  </h1>
+  <div class="header-date" id="header-date"></div>
+</header>
+
+<div class="tabs">
+  <div class="tab active" onclick="switchTab('input')">
+    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+    <span>入力</span>
+  </div>
+  <div class="tab" onclick="switchTab('list')">
+    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+    <span>一覧</span>
+  </div>
+  <div class="tab" onclick="switchTab('summary')">
+    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+    <span>集計</span>
+  </div>
+  <div class="tab" onclick="switchTab('export')">
+    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+    <span>出力</span>
+  </div>
+  <div class="tab" onclick="switchTab('master')">
+    <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    <span>基本</span>
+  </div>
+</div>
+
+<!-- ===== 入力 ===== -->
+<div id="page-input" class="page active">
+
+  <div class="card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>基本情報</div>
+    <div class="form-row">
+      <label>病院名 <span class="required">*</span></label>
+      <select id="inp-hospital" onchange="updateHospitalSuggestions()"></select>
+    </div>
+    <div class="row3">
+      <div>
+        <label>病棟 <span class="required">*</span></label>
+        <input type="text" id="inp-ward">
+      </div>
+      <div>
+        <label>部屋 <span class="required">*</span></label>
+        <input type="text" id="inp-room">
+      </div>
+      <div>
+        <label>ベッドNo <span class="required">*</span></label>
+        <input type="text" id="inp-bed">
+      </div>
+    </div>
+    <div class="row3" style="grid-template-columns:2fr 1fr">
+      <div>
+        <label>ベッド型番</label>
+        <select id="inp-model"></select>
+      </div>
+      <div>
+        <label>年式</label>
+        <div class="hist-wrap">
+          <input type="text" id="inp-year" inputmode="numeric" class="hist-input">
+          <button class="hist-btn" onclick="openHistPicker('inp-year','year')" type="button">▾</button>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <label>床番①</label>
+      <div class="hist-wrap">
+        <input type="text" id="inp-floor1" class="hist-input">
+        <button class="hist-btn" onclick="openHistPicker('inp-floor1','floor1')" type="button">▾</button>
+      </div>
+    </div>
+    <div class="form-row">
+      <label>床番②</label>
+      <div class="hist-wrap">
+        <input type="text" id="inp-floor2" class="hist-input">
+        <button class="hist-btn" onclick="openHistPicker('inp-floor2','floor2')" type="button">▾</button>
+      </div>
+    </div>
+    <div class="form-row">
+      <label>マットレス</label>
+      <div class="hist-wrap">
+        <input type="text" id="inp-mattress" class="hist-input">
+        <button class="hist-btn" onclick="openHistPicker('inp-mattress','mattress')" type="button">▾</button>
+      </div>
+    </div>
+    <div class="form-row">
+      <label>見守り機器</label>
+      <div class="hist-wrap">
+        <input type="text" id="inp-monitor" class="hist-input">
+        <button class="hist-btn" onclick="openHistPicker('inp-monitor','monitor')" type="button">▾</button>
+      </div>
+    </div>
+    <div class="form-row">
+      <label>TV</label>
+      <div class="hist-wrap">
+        <input type="text" id="inp-tv" class="hist-input">
+        <button class="hist-btn" onclick="openHistPicker('inp-tv','tv')" type="button">▾</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>キャスター状態</div>
+
+    <div class="bed-wrap">
+      <div class="bed-label-top">── 頭 側 ──</div>
+
+      <div class="bed-row">
+        <div class="bed-side-label">患者の右</div>
+
+        <div class="bed-frame">
+          <!-- ピクトグラム風ベッド -->
+          <svg viewBox="0 0 220 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- ベッド外枠 -->
+            <rect x="24" y="16" width="172" height="268" rx="18" ry="18"
+                  fill="#ffffff" stroke="#111111" stroke-width="6"/>
+            <!-- 枕 -->
+            <path d="M48 44 Q42 74 48 104 Q50 114 60 114 L160 114 Q170 114 172 104 Q178 74 172 44 Q170 34 160 34 L60 34 Q50 34 48 44 Z"
+                  fill="#ffffff" stroke="#111111" stroke-width="5"/>
+            <!-- 頭（大きな黒丸） -->
+            <circle cx="110" cy="74" r="26" fill="#111111"/>
+            <!-- 布団の上端を示す太い横線 -->
+            <line x1="28" y1="140" x2="192" y2="140" stroke="#111111" stroke-width="6"/>
+            <!-- 肩（布団の上から出ている丸） -->
+            <circle cx="68"  cy="140" r="11" fill="#111111"/>
+            <circle cx="152" cy="140" r="11" fill="#111111"/>
+            <!-- 布団下部の微かな縫い目（省略してスッキリ） -->
+          </svg>
+
+          <!-- キャスターボタン -->
+          <button class="caster-btn head-right" id="c-HR" onclick="cycleCaster('HR')">
+            <span class="c-label" id="cl-HR">未選択</span>
+          </button>
+          <button class="caster-btn head-left"  id="c-HL" onclick="cycleCaster('HL')">
+            <span class="c-label" id="cl-HL">未選択</span>
+          </button>
+          <button class="caster-btn foot-right" id="c-FR" onclick="cycleCaster('FR')">
+            <span class="c-label" id="cl-FR">未選択</span>
+          </button>
+          <button class="caster-btn foot-left"  id="c-FL" onclick="cycleCaster('FL')">
+            <span class="c-label" id="cl-FL">未選択</span>
+          </button>
+        </div>
+
+        <div class="bed-side-label">患者の左</div>
+      </div>
+
+      <div class="bed-label-bottom">── 足 側 ──</div>
+    </div>
+
+    <!-- 詳細状態エリア（要注意・要交換時のみ表示） -->
+    <div id="casterDetailArea" style="display:none;margin-bottom:12px">
+      <div style="font-size:10px;font-weight:400;color:var(--text3);margin-bottom:6px;font-family:'DM Mono',monospace;letter-spacing:.1em;text-transform:uppercase;">Detail — optional</div>
+      <div id="casterDetailItems"></div>
+    </div>
+
+    <div class="caster-summary" style="display:none">
+      <div class="c-chip"><span class="c-chip-name">頭側・右</span><span class="c-chip-val s-未選択" id="cs-HR">未選択</span></div>
+      <div class="c-chip"><span class="c-chip-name">頭側・左</span><span class="c-chip-val s-未選択" id="cs-HL">未選択</span></div>
+      <div class="c-chip"><span class="c-chip-name">足側・右</span><span class="c-chip-val s-未選択" id="cs-FR">未選択</span></div>
+      <div class="c-chip"><span class="c-chip-name">足側・左</span><span class="c-chip-val s-未選択" id="cs-FL">未選択</span></div>
+    </div>
+
+    <div style="display:flex;gap:6px;margin-bottom:6px">
+      <button class="btn btn-outline btn-sm" style="flex:1;font-size:11px;border-color:var(--ok);color:var(--ok)" onclick="setAll('正常')">全て正常</button>
+      <button class="btn btn-outline btn-sm" style="flex:1;font-size:11px;border-color:var(--warn);color:var(--warn)" onclick="setAll('要注意')">全て要注意</button>
+    </div>
+    <div style="display:flex;gap:6px;margin-bottom:4px">
+      <button class="btn btn-outline btn-sm" style="flex:1;font-size:11px;border-color:var(--ng);color:var(--ng)" onclick="setAll('要交換')">全て要交換</button>
+      <button class="btn btn-outline btn-sm" style="flex:1;font-size:11px;border-color:var(--done);color:var(--done)" onclick="setAll('交換済み')">全て交換済み</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>その他の破損部位</div>
+    <p style="font-size:12px;color:var(--text2);margin-bottom:12px;font-weight:500">各部位のボタンをタップして程度を選んでください</p>
+    <div class="parts-wrap">
+      <table class="pt">
+        <thead>
+          <tr><th style="min-width:80px">部位</th><th>軽微</th><th>中程度</th><th>重大</th></tr>
+        </thead>
+        <tbody id="partsBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>写真（最大3枚）</div>
+    <div class="photo-count" id="photoCount">0 / 3 枚</div>
+    <div class="photo-wrap" id="photoWrap">
+      <div class="photo-add" onclick="document.getElementById('photoInput').click()">
+        <span class="photo-add-icon">＋</span>
+        <span>追加</span>
+      </div>
+    </div>
+    <input type="file" id="photoInput" accept="image/*" capture="environment" onchange="handlePhotoSelect(event)">
+  </div>
+
+  <div class="card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>メモ</div>
+    <textarea id="inp-memo" placeholder="特記事項など..."></textarea>
+  </div>
+
+  <div style="height:20px"></div>
+</div>
+
+<!-- 保存ボタン（入力タブの時だけ表示される固定フッター） -->
+<div class="save-footer" id="saveFooter">
+  <button class="btn btn-primary btn-save-main" onclick="saveRecord()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="saveBtnLabel">記録を保存</span>
+  </button>
+  <button class="btn-clear-icon" onclick="if(confirm('入力中の内容をクリアしますか？'))clearForm(true)" title="完全クリア">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-2 14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L5 6"/></svg>
+  </button>
+</div>
+
+<!-- ===== 一覧 ===== -->
+<div id="page-list" class="page">
+  <div class="filter-bar">
+    <select id="filter-hospital" onchange="renderList()"><option value="">すべての病院</option></select>
+    <select id="filter-worst" onchange="renderList()">
+      <option value="">すべての状態</option>
+      <option>正常</option><option>要注意</option><option>要交換</option><option>交換済み</option>
+    </select>
+  </div>
+  <div class="sort-bar">
+    <span class="sort-chip active" data-sort="newest" onclick="setListSort('newest')">新しい順</span>
+    <span class="sort-chip" data-sort="oldest" onclick="setListSort('oldest')">古い順</span>
+    <span class="sort-chip" data-sort="ng" onclick="setListSort('ng')">要交換順</span>
+    <span class="sort-chip-action" onclick="toggleAllRecs()">全て展開／折りたたみ</span>
+  </div>
+  <div id="listContainer"></div>
+</div>
+
+<!-- ===== 集計 ===== -->
+<div id="page-summary" class="page">
+  <div class="card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M10 21v-5h4v5"/></svg>病院別 要交換率</div>
+    <div id="hospitalRatio"></div>
+  </div>
+</div>
+
+<!-- ===== 出力 ===== -->
+<div id="page-export" class="page">
+  <div class="storage-meter">
+    <div class="storage-top">
+      <span style="display:flex;align-items:center;gap:6px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 2v6h10V2"/><path d="M7 13h10"/><path d="M7 17h6"/></svg>保存容量</span>
+      <span id="storageText">0.0 MB / 4.0 MB</span>
+    </div>
+    <div class="storage-bar"><div id="storageBar" style="width:0%"></div></div>
+    <div class="storage-note" id="storageNote"></div>
+  </div>
+  <div class="card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>CSV出力</div>
+    <p style="font-size:13px;color:var(--text);margin-bottom:12px;line-height:1.7;font-weight:500">
+      明細・集計・要対応リストを<strong>1つのCSVファイル</strong>にまとめてダウンロードします。<br>
+      個別に出力したい場合は下のボタンをご利用ください。
+    </p>
+    <div class="form-row" style="margin-bottom:12px">
+      <label>病院で絞り込む（任意）</label>
+      <select id="export-hospital">
+        <option value="">すべての病院</option>
+      </select>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <button class="btn btn-success" onclick="exportAllCSV()" style="display:flex;align-items:center;justify-content:center;gap:8px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        全データを1ファイルでDL
+      </button>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">
+        <button class="btn btn-outline" style="font-size:11px;padding:8px 4px" onclick="exportDetailCSV()">①明細</button>
+        <button class="btn btn-outline" style="font-size:11px;padding:8px 4px" onclick="exportSummaryCSV()">②集計</button>
+        <button class="btn btn-outline" style="font-size:11px;padding:8px 4px" onclick="exportNgListCSV()">③要対応</button>
+      </div>
+    </div>
+    <div style="margin-top:12px;font-size:11px;color:var(--text2);line-height:1.8">
+      ① 明細：ベッド1台ごとの詳細データ<br>
+      ② 集計：病院別・病棟別・型番別・年式別・位置別<br>
+      ③ 要対応：要交換ベッドのみ抽出した発注用リスト
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>メール送信</div>
+    <p style="font-size:13px;color:var(--text);margin-bottom:12px;line-height:1.7;font-weight:500">
+      要交換ベッドの一覧をメールで送信します。<br>
+      病院を選んで絞り込むこともできます。
+    </p>
+    <div class="form-row" style="margin-bottom:12px">
+      <label>病院で絞り込む（任意）</label>
+      <select id="email-hospital">
+        <option value="">すべての病院</option>
+      </select>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <button class="btn btn-primary" onclick="sendEmailReport('ng')" style="display:flex;align-items:center;justify-content:center;gap:8px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        要対応リストをメール送信
+      </button>
+      <button class="btn btn-outline" onclick="sendEmailReport('all')" style="display:flex;align-items:center;justify-content:center;gap:8px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        全記録の概要をメール送信
+      </button>
+    </div>
+  </div>
+  <div class="card">
+    <p style="font-size:13px;color:var(--text);margin-bottom:12px;line-height:1.7;font-weight:500">
+      指定期間より古い記録を関連写真ごと一括削除します。<br>
+      <strong>事前にCSV出力しておくことを推奨</strong>します。
+    </p>
+    <div style="display:flex;gap:8px;margin-bottom:10px">
+      <button class="btn btn-outline btn-sm" style="flex:1" onclick="cleanupOld(30)">1ヶ月より前</button>
+      <button class="btn btn-outline btn-sm" style="flex:1" onclick="cleanupOld(90)">3ヶ月より前</button>
+      <button class="btn btn-outline btn-sm" style="flex:1" onclick="cleanupOld(180)">6ヶ月より前</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title" style="color:var(--ng)"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-2 14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>データ削除</div>
+    <p style="font-size:13px;color:var(--text);margin-bottom:12px;font-weight:500">すべての記録を削除します。元に戻せません。</p>
+    <button class="btn btn-danger" onclick="clearAll()">全データを削除</button>
+  </div>
+</div>
+
+<!-- ===== 基本情報 ===== -->
+<div id="page-master" class="page">
+  <div class="card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M10 21v-5h4v5"/></svg>病院名リスト</div>
+    <div id="hospitalsEditor"></div>
+    <div class="add-row">
+      <input type="text" id="new-hospital-mgr" placeholder="病院名を追加...">
+      <button class="btn btn-outline btn-sm" onclick="addHospitalMgr()">追加</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>ベッド型番リスト</div>
+    <div id="modelsEditor"></div>
+    <div class="add-row">
+      <input type="text" id="new-model-mgr" placeholder="型番を追加...">
+      <button class="btn btn-outline btn-sm" onclick="addModelMgr()">追加</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>破損部位リスト</div>
+    <p style="font-size:12px;color:var(--text2);margin-bottom:12px;font-weight:500">✏️で編集、✕で削除</p>
+    <div id="partsEditor"></div>
+    <div class="add-row">
+      <input type="text" id="new-part-mgr" placeholder="部位を追加...">
+      <button class="btn btn-outline btn-sm" onclick="addPartMgr()">追加</button>
+    </div>
+  </div>
+  <div class="card info-card">
+    <div class="card-title"><svg class="ct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>注意</div>
+    <p>部位を削除しても既存の記録は残ります。<br>CSV出力の列は出力時点の部位リストに基づきます。</p>
+  </div>
+</div>
+
+<!-- 履歴ピッカーモーダル -->
+<div class="hist-modal-backdrop" id="histModal" onclick="closeHistPicker(event)">
+  <div class="hist-modal-card" onclick="event.stopPropagation()">
+    <div class="hosp-modal-header" style="position:static;border-radius:0 var(--radius-lg) 0 0;">
+      <div class="hosp-modal-title" id="histModalTitle">履歴から選択</div>
+      <button class="modal-close" onclick="document.getElementById('histModal').classList.remove('show')" style="position:static;width:36px;height:36px">✕</button>
+    </div>
+    <div class="hosp-modal-body" id="histModalBody"></div>
+  </div>
+</div>
+
+<!-- 要交換ベッドリストモーダル -->
+<div class="hosp-modal" id="ngModal" onclick="closeNgModal(event)">
+  <div class="hosp-modal-card" onclick="event.stopPropagation()">
+    <div class="hosp-modal-header">
+      <div class="hosp-modal-title" id="ngModalTitle">要交換ベッド一覧</div>
+      <button class="modal-close" onclick="closeNgModal(event)" style="position:static;width:36px;height:36px">✕</button>
+    </div>
+    <div class="hosp-modal-body" id="ngModalBody"></div>
+  </div>
+</div>
+
+<!-- 病院詳細モーダル -->
+<div class="hosp-modal" id="hospModal" onclick="closeHospModal(event)">
+  <div class="hosp-modal-card" onclick="event.stopPropagation()">
+    <div class="hosp-modal-header">
+      <div class="hosp-modal-title" id="hospModalTitle">-</div>
+      <button class="modal-close" onclick="closeHospModal(event)" style="position:static;width:36px;height:36px">✕</button>
+    </div>
+    <div class="hosp-modal-body" id="hospModalBody"></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+<div class="modal-backdrop" id="photoModal" onclick="closePhotoModal(event)">
+  <button class="modal-close" onclick="closePhotoModal(event)">✕</button>
+  <img id="photoModalImg" src="">
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════
+const CASTER_POSITIONS = [
+  {id:'HR', label:'頭側・右'},
+  {id:'HL', label:'頭側・左'},
+  {id:'FR', label:'足側・右'},
+  {id:'FL', label:'足側・左'},
+];
+const CASTER_STATES = ['未選択','正常','要注意','要交換','交換済み'];
+
+// 大分類ごとの詳細選択肢
+const CASTER_DETAIL = {
+  '要注意': ['劣化','溝あり'],
+  '要交換': ['ゴム崩れ','ゴムなし','首振り破損'],
+};
+
+const DEFAULT_HOSPITALS = ['那覇市立病院','沖縄赤十字病院','県立中部病院','浦添総合病院'];
+const DEFAULT_MODELS    = ['パラマウント SF-836WC','パラマウント SF-837WC','フランスベッド MA-551','フランスベッド MA-501'];
+const DEFAULT_PARTS     = ['サイドレール','背ボード','足ボード','マットレス','フレーム','電動モーター','リモコン','ナースコール','柵ロック'];
+const SEVS = ['軽微','中程度','重大'];
+
+const MAX_PHOTOS    = 3;
+const STORAGE_LIMIT = 4 * 1024 * 1024;  // 4MB (安全マージン)
+const PHOTO_WIDTH   = 800;
+const PHOTO_QUALITY = 0.6;
+
+// データ構造（写真は別管理）
+let st = loadState();
+let photoStore = loadPhotos(); // {photoId: base64}
+
+// 現在の入力状態
+let formCasters = {HR:'未選択', HL:'未選択', FR:'未選択', FL:'未選択'};
+let formCasterDetail = {HR:'', HL:'', FR:'', FL:''}; // 詳細状態
+let formSev = {};
+let formPhotoIds = []; // 現在フォームに追加中の写真ID
+
+// 一覧タブの状態
+let expandedRecs = new Set();
+let listSort = 'newest'; // newest / oldest / ng
+
+function loadState(){
+  try{
+    const s = JSON.parse(localStorage.getItem('casterInspect')||'null');
+    if(!s) throw 'new';
+    if(!s.parts) s.parts = [...DEFAULT_PARTS];
+    return s;
+  }catch(e){
+    return { records:[], hospitals:[...DEFAULT_HOSPITALS], models:[...DEFAULT_MODELS], parts:[...DEFAULT_PARTS] };
+  }
+}
+function loadPhotos(){
+  try{
+    return JSON.parse(localStorage.getItem('casterPhotos')||'{}');
+  }catch(e){ return {}; }
+}
+
+// ═══════════════════════════════════════════════════════
+// SAFE SAVE - 試し書き＋自動バックアップ
+// ═══════════════════════════════════════════════════════
+function persistState(){
+  try{
+    // 自動バックアップ
+    const prev = localStorage.getItem('casterInspect');
+    if(prev) localStorage.setItem('casterInspect_backup', prev);
+    localStorage.setItem('casterInspect', JSON.stringify(st));
+    return true;
+  }catch(e){
+    showToast('⚠️ 保存失敗：容量オーバー','err');
+    return false;
+  }
+}
+function persistPhotos(){
+  try{
+    const prev = localStorage.getItem('casterPhotos');
+    if(prev) localStorage.setItem('casterPhotos_backup', prev);
+    localStorage.setItem('casterPhotos', JSON.stringify(photoStore));
+    return true;
+  }catch(e){
+    return false;
+  }
+}
+
+// 試し書き：写真追加前に容量チェック
+function canAddPhoto(base64){
+  const test = {...photoStore, ['__test_'+Date.now()]: base64};
+  try{
+    const json = JSON.stringify(test);
+    const size = new Blob([json]).size;
+    if(size > STORAGE_LIMIT){
+      return false;
+    }
+    // 実際に試し書き
+    localStorage.setItem('__casterTest', json);
+    localStorage.removeItem('__casterTest');
+    return true;
+  }catch(e){
+    localStorage.removeItem('__casterTest');
+    return false;
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// BOOT
+// ═══════════════════════════════════════════════════════
+renderHospitalOptions();
+renderModelOptions();
+renderPartsInputTable();
+renderList();
+renderSummary();
+renderHospitalsEditor();
+renderModelsEditor();
+renderPartsEditor();
+updateBadge();
+updateCasterUI();
+renderPhotoField();
+renderStorageMeter();
+document.getElementById('saveFooter').classList.add('show');
+
+function updateBadge(){
+  // バッジ非表示のため処理なし
+  // ヘッダー日付を更新
+  const el = document.getElementById('header-date');
+  if(!el) return;
+  const now = new Date();
+  const days = ['（日）','（月）','（火）','（水）','（木）','（金）','（土）'];
+  el.textContent = `${now.getFullYear()}.${String(now.getMonth()+1).padStart(2,'0')}.${String(now.getDate()).padStart(2,'0')} ${days[now.getDay()]}`;
+}
+
+// ═══════════════════════════════════════════════════════
+// DRAFT AUTOSAVE (下書き自動保存)
+// ═══════════════════════════════════════════════════════
+const DRAFT_KEY = 'roundNoteDraft';
+let draftTimer = null;
+
+function saveDraft(){
+  const draft = {
+    hospital: document.getElementById('inp-hospital').value,
+    ward:     document.getElementById('inp-ward').value,
+    room:     document.getElementById('inp-room').value,
+    bed:      document.getElementById('inp-bed').value,
+    model:    document.getElementById('inp-model').value,
+    year:     document.getElementById('inp-year').value,
+    floor1:   document.getElementById('inp-floor1').value,
+    floor2:   document.getElementById('inp-floor2').value,
+    mattress: document.getElementById('inp-mattress').value,
+    monitor:  document.getElementById('inp-monitor').value,
+    tv:       document.getElementById('inp-tv').value,
+    memo:     document.getElementById('inp-memo').value,
+    casters:  {...formCasters},
+    casterDetail:{...formCasterDetail},
+    sev:      {...formSev},
+    photoIds: [...formPhotoIds]
+  };
+  try{ localStorage.setItem(DRAFT_KEY, JSON.stringify(draft)); }catch(e){}
+}
+function loadDraft(){
+  try{
+    const d = JSON.parse(localStorage.getItem(DRAFT_KEY)||'null');
+    if(!d) return;
+    // 何か入力済みの下書きかチェック
+    const hasContent = d.bed||d.memo||
+      Object.values(d.casters||{}).some(v=>v&&v!=='未選択')||
+      Object.values(d.sev||{}).some(v=>v)||
+      (d.photoIds||[]).length>0;
+    if(!hasContent) return;
+    document.getElementById('inp-hospital').value = d.hospital||'';
+    document.getElementById('inp-ward').value     = d.ward||'';
+    document.getElementById('inp-room').value     = d.room||'';
+    document.getElementById('inp-bed').value      = d.bed||'';
+    document.getElementById('inp-model').value    = d.model||'';
+    document.getElementById('inp-year').value     = d.year||'';
+    document.getElementById('inp-floor1').value   = d.floor1||'';
+    document.getElementById('inp-floor2').value   = d.floor2||'';
+    document.getElementById('inp-mattress').value = d.mattress||'';
+    document.getElementById('inp-monitor').value  = d.monitor||'';
+    document.getElementById('inp-tv').value       = d.tv||'';
+    document.getElementById('inp-memo').value     = d.memo||'';
+    formCasters  = d.casters||{HR:'未選択',HL:'未選択',FR:'未選択',FL:'未選択'};
+    formCasterDetail = d.casterDetail||{HR:'',HL:'',FR:'',FL:''};
+    formSev      = d.sev||{};
+    formPhotoIds = (d.photoIds||[]).filter(id=>photoStore[id]);
+    updateCasterUI();
+    renderPartsInputTable();
+    renderPhotoField();
+    showToast('📝 前回の下書きを復元しました');
+  }catch(e){}
+}
+function clearDraft(){ localStorage.removeItem(DRAFT_KEY); }
+
+function scheduleDraftSave(){
+  clearTimeout(draftTimer);
+  draftTimer = setTimeout(saveDraft, 500);
+}
+
+function updateSaveButtonState(){
+  const btn = document.querySelector('.btn-save-main');
+  if(!btn) return;
+  const hospital = document.getElementById('inp-hospital').value;
+  const ward     = document.getElementById('inp-ward').value.trim();
+  const room     = document.getElementById('inp-room').value.trim();
+  const bed      = document.getElementById('inp-bed').value.trim();
+  const hasCaster = Object.values(formCasters).some(v=>v!=='未選択');
+  const ok = hospital && ward && room && bed && hasCaster;
+  // 押せる状態は保ち、見た目だけ変える
+  btn.disabled = false;
+  btn.classList.toggle('btn-incomplete', !ok);
+}
+
+// 入力監視
+document.addEventListener('DOMContentLoaded', ()=>{
+  ['inp-hospital','inp-ward','inp-room','inp-bed','inp-model','inp-year',
+   'inp-floor1','inp-floor2','inp-mattress','inp-monitor','inp-tv','inp-memo'].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el){
+      el.addEventListener('input', ()=>{scheduleDraftSave();updateSaveButtonState();});
+      el.addEventListener('change', ()=>{scheduleDraftSave();updateSaveButtonState();});
+    }
+  });
+  // キーボード表示時に保存フッターを隠す
+  const hideFooterOnFocus = (e)=>{
+    const tag = e.target.tagName;
+    if((tag==='INPUT' || tag==='TEXTAREA') && e.target.type !== 'file'){
+      document.getElementById('saveFooter').classList.add('kb-hide');
+    }else{
+      document.getElementById('saveFooter').classList.remove('kb-hide');
+    }
+  };
+  const showFooterOnBlur = ()=>{
+    setTimeout(()=>{
+      const ae = document.activeElement;
+      const isInput = ae && (ae.tagName==='INPUT' || ae.tagName==='TEXTAREA') && ae.type!=='file';
+      if(!isInput){
+        document.getElementById('saveFooter').classList.remove('kb-hide');
+      }
+    }, 150);
+  };
+  document.addEventListener('focusin', hideFooterOnFocus);
+  document.addEventListener('focusout', showFooterOnBlur);
+  // タブ切替やスクロール、画面タップ時にもフッターを復帰させる保険
+  document.addEventListener('visibilitychange', ()=>{
+    document.getElementById('saveFooter').classList.remove('kb-hide');
+  });
+  loadDraft();
+  updateSaveButtonState();
+});
+
+// ═══════════════════════════════════════════════════════
+// 病院別入力履歴ピッカー
+// ═══════════════════════════════════════════════════════
+const HIST_LABELS = {
+  year:'年式', floor1:'床番①', floor2:'床番②',
+  mattress:'マットレス', monitor:'見守り機器', tv:'TV'
+};
+
+function updateHospitalSuggestions(){
+  // 病院変更時は特に何もしない（ピッカーは都度呼び出し）
+}
+
+function openHistPicker(inputId, key){
+  const hosp = document.getElementById('inp-hospital').value;
+  const modal = document.getElementById('histModal');
+  const title = document.getElementById('histModalTitle');
+  const body  = document.getElementById('histModalBody');
+
+  if(!hosp){
+    showToast('⚠️ 先に病院名を選択してください','warn');
+    return;
+  }
+
+  const recs = st.records.filter(r=>r.hospital===hosp);
+  const vals = [...new Set(recs.map(r=>r[key]||'').filter(Boolean))].sort();
+
+  title.textContent = `${HIST_LABELS[key]} — 履歴から選択`;
+
+  if(!vals.length){
+    body.innerHTML = `<div class="hist-pick-empty">この病院の履歴はまだありません</div>`;
+  } else {
+    body.innerHTML = vals.map(v=>
+      `<div class="hist-pick-item" onclick="pickHist('${inputId}','${v.replace(/'/g,"\\'")}')">
+        ${v}
+      </div>`
+    ).join('');
+  }
+
+  modal.classList.add('show');
+}
+
+function pickHist(inputId, val){
+  document.getElementById(inputId).value = val;
+  document.getElementById('histModal').classList.remove('show');
+  scheduleDraftSave();
+  updateSaveButtonState();
+}
+
+function closeHistPicker(e){
+  if(e && e.target && e.target.classList.contains('hist-modal-backdrop')){
+    document.getElementById('histModal').classList.remove('show');
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// TABS
+// ═══════════════════════════════════════════════════════
+function switchTab(name){
+  // フォーカス外してキーボードを閉じる
+  if(document.activeElement && document.activeElement.blur) document.activeElement.blur();
+  const names=['input','list','summary','export','master'];
+  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',names[i]===name));
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  const footer = document.getElementById('saveFooter');
+  footer.classList.toggle('show', name==='input');
+  footer.classList.remove('kb-hide');
+  if(name==='list')   renderList();
+  if(name==='summary') renderSummary();
+  if(name==='export')  { renderStorageMeter(); renderHospitalOptions(); }  if(name==='master'){ renderHospitalsEditor(); renderModelsEditor(); renderPartsEditor(); }
+}
+
+// ═══════════════════════════════════════════════════════
+// CASTER INPUT
+// ═══════════════════════════════════════════════════════
+function cycleCaster(pos){
+  const cur = CASTER_STATES.indexOf(formCasters[pos]);
+  formCasters[pos] = CASTER_STATES[(cur+1) % CASTER_STATES.length];
+  // 詳細リセット
+  if(!CASTER_DETAIL[formCasters[pos]]) formCasterDetail[pos] = '';
+  updateCasterUI();
+  scheduleDraftSave();
+  updateSaveButtonState();
+}
+function setAll(state){
+  Object.keys(formCasters).forEach(k=>{
+    formCasters[k]=state;
+    if(!CASTER_DETAIL[state]) formCasterDetail[k]='';
+  });
+  updateCasterUI();
+  scheduleDraftSave();
+  updateSaveButtonState();
+}
+function setDetail(pos, val){
+  formCasterDetail[pos] = formCasterDetail[pos]===val ? '' : val;
+  renderDetailArea();
+  scheduleDraftSave();
+}
+function updateCasterUI(){
+  CASTER_POSITIONS.forEach(({id})=>{
+    const state = formCasters[id];
+    const btn   = document.getElementById('c-'+id);
+    const lbl   = document.getElementById('cl-'+id);
+    const chip  = document.getElementById('cs-'+id);
+    btn.className = 'caster-btn ' + posClass(id) + (state!=='未選択' ? ' s-'+state : '');
+    // ボタン背景色を動的に設定
+    const colors = {'正常':'var(--ok)','要注意':'var(--warn)','要交換':'var(--ng)','交換済み':'var(--done)'};
+    if(colors[state]){
+      btn.style.background   = colors[state];
+      btn.style.borderColor  = colors[state];
+    }else{
+      btn.style.background   = '';
+      btn.style.borderColor  = '';
+    }
+    lbl.textContent = state;
+    if(chip){
+      chip.textContent = state;
+      chip.className   = 'c-chip-val s-'+state;
+    }
+  });
+  renderDetailArea();
+}
+
+function renderDetailArea(){
+  const area  = document.getElementById('casterDetailArea');
+  const items = document.getElementById('casterDetailItems');
+  if(!area||!items) return;
+
+  const needDetail = CASTER_POSITIONS.filter(({id})=>CASTER_DETAIL[formCasters[id]]);
+  if(!needDetail.length){
+    area.style.display='none';
+    return;
+  }
+  area.style.display='block';
+
+  // 2×2グリッドでベッド図と同じ配置（頭右・頭左 / 足右・足左）
+  const positions = [
+    {id:'HR', label:'頭・右', grid:'1/1'},
+    {id:'HL', label:'頭・左', grid:'1/2'},
+    {id:'FR', label:'足・右', grid:'2/1'},
+    {id:'FL', label:'足・左', grid:'2/2'},
+  ];
+
+  const cells = positions.map(({id, label, grid})=>{
+    const state = formCasters[id];
+    const [row, col] = grid.split('/');
+    if(!CASTER_DETAIL[state]) return `<div style="grid-row:${row};grid-column:${col}"></div>`;
+    const choices = CASTER_DETAIL[state]||[];
+    const current = formCasterDetail[id]||'';
+    const colorCls = state==='要注意' ? 'sel-warn' : 'sel-ng';
+    const borderColor = state==='要注意' ? 'var(--warn)' : 'var(--ng)';
+    const chips = choices.map(c=>
+      `<span class="detail-chip ${current===c?colorCls:''}" onclick="setDetail('${id}','${c}')">${c}</span>`
+    ).join('');
+    return `<div class="detail-row" style="grid-row:${row};grid-column:${col};border-left-color:${borderColor}">
+      <span class="detail-pos">${label}</span>
+      <div class="detail-chips">${chips}</div>
+    </div>`;
+  }).join('');
+
+  items.innerHTML = `
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+      ${cells}
+    </div>
+  `;
+}
+function posClass(id){
+  return {HR:'head-right',HL:'head-left',FR:'foot-right',FL:'foot-left'}[id];
+}
+
+// ═══════════════════════════════════════════════════════
+// PHOTO HANDLING - 自動圧縮＋安全保存
+// ═══════════════════════════════════════════════════════
+function handlePhotoSelect(evt){
+  const file = evt.target.files[0];
+  if(!file){ return; }
+  evt.target.value = ''; // 同じファイルを再選択できるように
+
+  if(formPhotoIds.length >= MAX_PHOTOS){
+    showToast('⚠️ 写真は最大3枚まで','warn');
+    return;
+  }
+  showToast('🔄 写真を圧縮中...');
+  compressImage(file).then(base64=>{
+    // 容量チェック
+    if(!canAddPhoto(base64)){
+      showToast('⚠️ 容量オーバーのため追加不可','err');
+      return;
+    }
+    const photoId = 'p_' + Date.now() + '_' + Math.random().toString(36).slice(2,8);
+    photoStore[photoId] = base64;
+    if(!persistPhotos()){
+      delete photoStore[photoId];
+      showToast('⚠️ 写真の保存に失敗','err');
+      return;
+    }
+    formPhotoIds.push(photoId);
+    renderPhotoField();
+    showToast('✅ 写真を追加しました');
+  }).catch(err=>{
+    console.error(err);
+    showToast('⚠️ 写真の処理に失敗','err');
+  });
+}
+
+function compressImage(file){
+  return new Promise((resolve, reject)=>{
+    const reader = new FileReader();
+    reader.onload = e=>{
+      const img = new Image();
+      img.onload = ()=>{
+        const canvas = document.createElement('canvas');
+        let w = img.width, h = img.height;
+        if(w > PHOTO_WIDTH){
+          h = Math.round(h * PHOTO_WIDTH / w);
+          w = PHOTO_WIDTH;
+        }
+        canvas.width = w; canvas.height = h;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#fff';
+        ctx.fillRect(0,0,w,h);
+        ctx.drawImage(img,0,0,w,h);
+        resolve(canvas.toDataURL('image/jpeg', PHOTO_QUALITY));
+      };
+      img.onerror = reject;
+      img.src = e.target.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+function renderPhotoField(){
+  const wrap = document.getElementById('photoWrap');
+  const count = document.getElementById('photoCount');
+  count.textContent = `${formPhotoIds.length} / ${MAX_PHOTOS} 枚`;
+
+  const thumbs = formPhotoIds.map(id=>`
+    <div class="photo-thumb" style="background-image:url('${photoStore[id]||''}')" onclick="openPhotoModal('${id}')">
+      <div class="photo-remove" onclick="event.stopPropagation();removeFormPhoto('${id}')">✕</div>
+    </div>
+  `).join('');
+  const addBtn = formPhotoIds.length < MAX_PHOTOS ? `
+    <div class="photo-add" onclick="document.getElementById('photoInput').click()">
+      <span class="photo-add-icon">＋</span>
+      <span>追加</span>
+    </div>` : '';
+  wrap.innerHTML = thumbs + addBtn;
+}
+
+function removeFormPhoto(id){
+  delete photoStore[id];
+  formPhotoIds = formPhotoIds.filter(x=>x!==id);
+  persistPhotos();
+  renderPhotoField();
+  showToast('削除しました');
+}
+
+function openPhotoModal(id){
+  const m = document.getElementById('photoModal');
+  document.getElementById('photoModalImg').src = photoStore[id]||'';
+  m.classList.add('show');
+}
+function closePhotoModal(e){
+  if(e && e.target && !e.target.classList.contains('modal-backdrop') && !e.target.classList.contains('modal-close'))return;
+  document.getElementById('photoModal').classList.remove('show');
+}
+
+// ═══════════════════════════════════════════════════════
+// SAVE
+// ═══════════════════════════════════════════════════════
+function editRecord(id){
+  const r = st.records.find(x=>x.id===id);
+  if(!r){ showToast('⚠️ 記録が見つかりません','err'); return; }
+  editingId = id;
+  document.getElementById('inp-hospital').value = r.hospital||'';
+  document.getElementById('inp-ward').value     = r.ward||'';
+  document.getElementById('inp-room').value     = r.room||'';
+  document.getElementById('inp-bed').value      = r.bed||'';
+  document.getElementById('inp-model').value    = r.model||'';
+  document.getElementById('inp-year').value     = r.year||'';
+  document.getElementById('inp-floor1').value   = r.floor1||'';
+  document.getElementById('inp-floor2').value   = r.floor2||'';
+  document.getElementById('inp-mattress').value = r.mattress||'';
+  document.getElementById('inp-monitor').value  = r.monitor||'';
+  document.getElementById('inp-tv').value       = r.tv||'';
+  document.getElementById('inp-memo').value     = r.memo||'';
+  formCasters  = {HR:'未選択',HL:'未選択',FR:'未選択',FL:'未選択', ...(r.casters||{})};
+  formCasterDetail = {HR:'',HL:'',FR:'',FL:'', ...(r.casterDetail||{})};
+  formSev      = {...(r.partsSev||{})};
+  formPhotoIds = (r.photoIds||[]).filter(pid=>photoStore[pid]);
+  updateCasterUI();
+  renderPartsInputTable();
+  renderPhotoField();
+  updateSaveButtonState();
+  document.getElementById('saveBtnLabel').textContent = '編集を保存';
+  switchTab('input');
+  window.scrollTo(0,0);
+  showToast('✏️ 編集モード');
+}
+
+let editingId = null; // 編集中の記録ID
+
+function saveRecord(){
+  const hospital = document.getElementById('inp-hospital').value;
+  const ward     = document.getElementById('inp-ward').value.trim();
+  const room     = document.getElementById('inp-room').value.trim();
+  const bed      = document.getElementById('inp-bed').value.trim();
+  const model    = document.getElementById('inp-model').value;
+  const year     = document.getElementById('inp-year').value.trim();
+  const floor1   = document.getElementById('inp-floor1').value.trim();
+  const floor2   = document.getElementById('inp-floor2').value.trim();
+  const mattress = document.getElementById('inp-mattress').value.trim();
+  const monitor  = document.getElementById('inp-monitor').value.trim();
+  const tv       = document.getElementById('inp-tv').value.trim();
+  const memo     = document.getElementById('inp-memo').value.trim();
+
+  if(!hospital){ showToast('⚠️ 病院名を選択してください','warn'); return; }
+  const missing = [];
+  if(!ward) missing.push('病棟');
+  if(!room) missing.push('部屋');
+  if(!bed)  missing.push('ベッドNo');
+  if(missing.length){ showToast('⚠️ 未入力：'+missing.join('・'),'warn'); return; }
+  if(Object.values(formCasters).every(v=>v==='未選択')){ showToast('⚠️ キャスター状態を1つ以上選択','warn'); return; }
+
+  // ベッドNo重複チェック（同じ病院・病棟・部屋・ベッドNo）
+  if(!editingId){
+    const dup = st.records.find(r=>
+      r.hospital===hospital && r.ward===ward && r.room===room && r.bed===bed
+    );
+    if(dup){
+      if(!confirm(`⚠️ 同じベッドの記録があります。\n（${dup.date} ${dup.time}）\n\n重複して登録しますか？`)) return;
+    }
+  }
+
+  const order = {'要交換':4,'要注意':3,'交換済み':2,'正常':1,'未選択':0};
+  const worst = Object.values(formCasters).reduce((a,v)=>order[v]>order[a]?v:a,'未選択');
+
+  if(editingId){
+    // ── 編集モード：既存記録を更新
+    const idx = st.records.findIndex(r=>r.id===editingId);
+    if(idx < 0){ editingId=null; showToast('⚠️ 対象記録が見つかりません','err'); return; }
+    const old = st.records[idx];
+    // 削除された写真を片付ける
+    (old.photoIds||[]).forEach(pid=>{
+      if(!formPhotoIds.includes(pid)){ delete photoStore[pid]; }
+    });
+    st.records[idx] = {
+      ...old,
+      hospital, ward, room, bed, model, year, floor1, floor2, mattress, monitor, tv, memo,
+      worst,
+      casters: {...formCasters},
+      partsSev: {...formSev},
+      photoIds: [...formPhotoIds],
+      updatedAt: new Date().toLocaleString('ja-JP')
+    };
+    if(!persistState() || !persistPhotos()){
+      showToast('⚠️ 保存失敗','err');
+      return;
+    }
+    updateBadge();
+    clearForm(true);
+    clearDraft();
+    editingId = null;
+    document.getElementById('saveBtnLabel').textContent = '記録を保存';
+    showToast('✏️ 更新しました');
+    switchTab('list');
+    return;
+  }
+
+  // ── 新規保存モード
+  st.records.unshift({
+    id: Date.now(),
+    date: new Date().toLocaleDateString('ja-JP',{year:'numeric',month:'2-digit',day:'2-digit'}).replace(/\//g,'-'),
+    time: new Date().toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit'}),
+    hospital, ward, room, bed, model, year, floor1, floor2, mattress, monitor, tv, memo,
+    worst,
+    casters: {...formCasters},
+    casterDetail: {...formCasterDetail},
+    partsSev: {...formSev},
+    photoIds: [...formPhotoIds]
+  });
+
+  if(!persistState()){
+    // 保存失敗：記録を巻き戻す
+    st.records.shift();
+    showToast('⚠️ 保存失敗。容量を確認してください','err');
+    return;
+  }
+  updateBadge();
+  clearForm(false);
+  clearDraft();
+  editingId = null;
+  document.getElementById('saveBtnLabel').textContent = '記録を保存';
+  window.scrollTo({top:0, behavior:'smooth'});
+  showToast('✅ 保存しました');
+}
+
+// clearForm(fullClear)
+// fullClear = true: 全てクリア
+// fullClear = false: 病院名・病棟・部屋は保持
+function clearForm(fullClear){
+  if(fullClear){
+    document.getElementById('inp-hospital').value='';
+    document.getElementById('inp-ward').value='';
+    document.getElementById('inp-room').value='';
+  }
+  document.getElementById('inp-bed').value='';
+  document.getElementById('inp-model').value='';
+  document.getElementById('inp-year').value='';
+  document.getElementById('inp-floor1').value='';
+  document.getElementById('inp-floor2').value='';
+  document.getElementById('inp-mattress').value='';
+  document.getElementById('inp-monitor').value='';
+  document.getElementById('inp-tv').value='';
+  document.getElementById('inp-memo').value='';
+  formCasters={HR:'未選択',HL:'未選択',FR:'未選択',FL:'未選択'};
+  formCasterDetail={HR:'',HL:'',FR:'',FL:''};
+  formSev={};
+  formPhotoIds=[];
+  updateCasterUI();
+  renderPartsInputTable();
+  renderPhotoField();
+  updateSaveButtonState();
+}
+
+// ═══════════════════════════════════════════════════════
+// LIST
+// ═══════════════════════════════════════════════════════
+function toggleRec(id){
+  if(expandedRecs.has(id)) expandedRecs.delete(id);
+  else expandedRecs.add(id);
+  renderList();
+}
+
+function toggleAllRecs(){
+  const recs = st.records;
+  const fh = document.getElementById('filter-hospital')?.value||'';
+  const fw = document.getElementById('filter-worst')?.value||'';
+  const visible = recs.filter(r=>(!fh||r.hospital===fh)&&(!fw||r.worst===fw));
+  const allExpanded = visible.length>0 && visible.every(r=>expandedRecs.has(r.id));
+  if(allExpanded){
+    visible.forEach(r=>expandedRecs.delete(r.id));
+  }else{
+    visible.forEach(r=>expandedRecs.add(r.id));
+  }
+  renderList();
+}
+
+function setListSort(s){
+  listSort = s;
+  document.querySelectorAll('.sort-chip').forEach(el=>{
+    el.classList.toggle('active', el.dataset.sort===s);
+  });
+  renderList();
+}
+
+function dateWithDay(dateStr, timeStr){
+  if(!dateStr) return timeStr||'';
+  try{
+    const parts = dateStr.replace(/年|月/g,'-').replace(/日/,'').split('-').map(Number);
+    if(parts.length >= 3){
+      const d = new Date(parts[0], parts[1]-1, parts[2]);
+      const days = ['（日）','（月）','（火）','（水）','（木）','（金）','（土）'];
+      return `${dateStr} ${days[d.getDay()]} ${timeStr||''}`.trim();
+    }
+  }catch(e){}
+  return `${dateStr} ${timeStr||''}`.trim();
+}
+
+function renderList(){
+  const fh = document.getElementById('filter-hospital')?.value||'';
+  const fw = document.getElementById('filter-worst')?.value||'';
+  let recs = st.records.slice();
+  if(fh) recs = recs.filter(r=>r.hospital===fh);
+  if(fw) recs = recs.filter(r=>r.worst===fw);
+
+  // ソート
+  if(listSort === 'oldest'){
+    recs.sort((a,b)=>a.id-b.id);
+  }else if(listSort === 'ng'){
+    const rank = {'要交換':4,'要注意':3,'交換済み':2,'正常':1,'未選択':0};
+    recs.sort((a,b)=>(rank[b.worst]||0)-(rank[a.worst]||0) || b.id-a.id);
+  }else{
+    recs.sort((a,b)=>b.id-a.id);
+  }
+
+  const c = document.getElementById('listContainer');
+  if(!recs.length){ c.innerHTML='<div class="empty">記録なし</div>'; return; }
+
+  c.innerHTML = recs.map(r=>{
+    const expanded = expandedRecs.has(r.id);
+    const loc = [r.ward, r.room, r.bed].filter(Boolean).join('-') || '－';
+    // キャスター4色ミニチップ
+    const miniChips = CASTER_POSITIONS.map(({id})=>{
+      const s = r.casters[id]||'未選択';
+      return `<span class="mini-chip s-${s}" title="${s}"></span>`;
+    }).join('');
+    // サブ情報のアイコン
+    const partsCount = Object.values(r.partsSev||{}).filter(v=>v).length;
+    const photoCount = (r.photoIds||[]).filter(id=>photoStore[id]).length;
+    const hasMemo = !!r.memo;
+    const iconRow = [];
+    if(partsCount) iconRow.push(`<span class="mini-info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="11" height="11"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>${partsCount}</span>`);
+    if(photoCount) iconRow.push(`<span class="mini-info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="11" height="11"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>${photoCount}</span>`);
+    if(hasMemo)    iconRow.push(`<span class="mini-info"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="11" height="11"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>`);
+    const iconHtml = iconRow.join('');
+
+    // 日付簡略化
+    const dateShort = (r.date||'').replace(/^20\d\d\//,'').replace(/\//g,'/');
+
+    const header = `
+      <div class="rec-head" onclick="toggleRec(${r.id})">
+        <div class="rec-head-l">
+          <span class="worst-badge wb-${r.worst}">${r.worst}</span>
+          <span class="rec-head-hospital">${r.hospital}</span>
+          <span class="rec-head-loc">${loc}</span>
+        </div>
+        <div class="rec-head-r">
+          <span class="mini-chips">${miniChips}</span>
+          ${iconHtml?`<span class="mini-info-group">${iconHtml}</span>`:''}
+          <svg class="rec-chevron ${expanded?'exp':''}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </div>`;
+
+    if(!expanded) return `<div class="rec-compact">${header}</div>`;
+
+    // 展開時：詳細
+    const castHtml = CASTER_POSITIONS.map(({id,label})=>`
+      <div class="rc-item">
+        <span class="rc-pos">${label}</span>
+        <span class="rc-val s-${r.casters[id]||'未選択'}">${r.casters[id]||'未選択'}${(r.casterDetail&&r.casterDetail[id])?`<span style="font-size:10px;font-weight:600;margin-left:3px;opacity:.8">（${r.casterDetail[id]}）</span>`:''}</span>
+      </div>`).join('');
+    const photoHtml = (r.photoIds||[]).filter(id=>photoStore[id]).map(id=>
+      `<img src="${photoStore[id]}" onclick="openPhotoModal('${id}')" alt="photo">`
+    ).join('');
+
+    return `<div class="rec-compact expanded">
+      ${header}
+      <div class="rec-body">
+        ${(r.model||r.year)?`<div class="rec-meta-line"><span class="rml-lbl">型番</span><span class="rml-val">${r.model||'-'}${r.year?` <span style="color:var(--text2);font-weight:500">（${r.year}）</span>`:''}</span></div>`:''}
+        ${(r.floor1||r.floor2)?`<div class="rec-meta-line"><span class="rml-lbl">床番</span><span class="rml-val">${[r.floor1,r.floor2].filter(Boolean).join(' / ')}</span></div>`:''}
+        ${(r.mattress||r.monitor||r.tv)?`<div class="rec-meta-line"><span class="rml-lbl">備品</span><span class="rml-val">${[r.mattress?`マ:${r.mattress}`:'',r.monitor?`見:${r.monitor}`:'',r.tv?`TV:${r.tv}`:''].filter(Boolean).join(' / ')}</span></div>`:''}
+        <div class="rec-casters">${castHtml}</div>
+        ${Object.entries(r.partsSev||{}).filter(([,v])=>v).length ? `
+        <div class="rec-parts">${Object.entries(r.partsSev||{}).filter(([,v])=>v).map(([k,v])=>`<span class="rec-part-chip">${k} <b>${v}</b></span>`).join('')}</div>` : ''}
+        ${photoHtml?`<div class="rec-photos">${photoHtml}</div>`:''}
+        ${r.memo?`<div class="rec-memo">📝 ${r.memo}</div>`:''}
+        <div class="rec-foot">
+          <span class="rec-date">${dateWithDay(r.date, r.time)}</span>
+          <div class="rec-action-btns-inline">
+            <button class="act-btn act-edit" onclick="event.stopPropagation();editRecord(${r.id})" title="編集">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </button>
+            <button class="act-btn act-del" onclick="event.stopPropagation();deleteRecord(${r.id})" title="削除">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-2 14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L5 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+function deleteRecord(id){
+  if(!confirm('この記録を削除しますか？'))return;
+  const rec = st.records.find(r=>r.id===id);
+  // 関連写真も削除
+  if(rec && rec.photoIds){
+    rec.photoIds.forEach(pid=>{ delete photoStore[pid]; });
+    persistPhotos();
+  }
+  st.records=st.records.filter(r=>r.id!==id);
+  persistState();
+  updateBadge();
+  renderList();
+}
+
+// ═══════════════════════════════════════════════════════
+// SUMMARY
+// ═══════════════════════════════════════════════════════
+function renderSummary(){
+  const recs=st.records;
+
+  // 病院別要交換率
+  const hMap = {};
+  recs.forEach(r=>{
+    if(!hMap[r.hospital]) hMap[r.hospital] = {total:0, ng:0, records:0};
+    hMap[r.hospital].records++;
+    Object.values(r.casters||{}).forEach(v=>{
+      if(v==='未選択')return;
+      hMap[r.hospital].total++;
+      if(v==='要交換') hMap[r.hospital].ng++;
+    });
+  });
+  const entries = Object.entries(hMap).map(([name,d])=>{
+    const rate = d.total ? (d.ng/d.total*100) : 0;
+    return {name, rate, ng:d.ng, total:d.total, records:d.records};
+  }).sort((a,b)=>b.rate-a.rate);
+
+  const el = document.getElementById('hospitalRatio');
+  if(!entries.length){
+    el.innerHTML = '<div style="color:var(--text2);font-size:13px;padding:8px 0;text-align:center">データなし</div>';
+    return;
+  }
+  el.innerHTML = entries.map(e=>{
+    const cls = e.rate >= 20 ? 'r-high' : (e.rate >= 10 ? 'r-mid' : 'r-low');
+    return `<div class="hosp-row" onclick="openHospDetail('${e.name.replace(/'/g,"\\'")}')">
+      <div class="hosp-name">${e.name}</div>
+      <div class="hosp-stat">
+        <span class="hosp-rate ${cls}">${e.rate.toFixed(1)}%</span>
+        <span class="hosp-sub">${e.ng}個 / ${e.total}個（${e.records}台）</span>
+      </div>
+      <svg class="hosp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════════════
+// HOSPITAL DETAIL MODAL
+// ═══════════════════════════════════════════════════════
+function openHospDetail(hospName){
+  const recs = st.records.filter(r=>r.hospital===hospName);
+  if(!recs.length){ showToast('データなし','warn'); return; }
+
+  let ng=0, warn=0, ok=0, done=0, total=0;
+  const modelCount = {};
+  const yearCount  = {};
+  const modelYear  = {};
+
+  recs.forEach(r=>{
+    Object.values(r.casters||{}).forEach(v=>{
+      if(v==='未選択')return;
+      total++;
+      if(v==='要交換')ng++;
+      else if(v==='要注意')warn++;
+      else if(v==='交換済み')done++;
+      else if(v==='正常')ok++;
+    });
+    const m = r.model  || '（未記入）';
+    const y = r.year   || '（未記入）';
+    modelCount[m] = (modelCount[m]||0) + 1;
+    yearCount[y]  = (yearCount[y]||0)  + 1;
+    const key = `${m}|${y}`;
+    modelYear[key] = (modelYear[key]||0) + 1;
+  });
+  const ngRate = total ? (ng/total*100) : 0;
+
+  document.getElementById('hospModalTitle').textContent = hospName;
+
+  const statsHTML = `
+    <div class="detail-section">
+      <div class="rate-hero">
+        <div class="rate-hero-label">要交換率</div>
+        <div class="rate-hero-num">${ngRate.toFixed(1)}<span class="rate-hero-unit">%</span></div>
+        <div class="rate-hero-sub">${ng} / ${total} キャスター</div>
+      </div>
+      <div class="state-breakdown">
+        <div class="sb-item sb-ok">
+          <div class="sb-num">${ok}<span class="sb-unit">個</span></div>
+          <div class="sb-lbl">正常</div>
+        </div>
+        <div class="sb-item sb-warn">
+          <div class="sb-num">${warn}<span class="sb-unit">個</span></div>
+          <div class="sb-lbl">要注意</div>
+        </div>
+        <div class="sb-item sb-ng" style="cursor:pointer" onclick="toggleNgBedsInModal('${hospName.replace(/'/g,"\\'")}')">
+          <div class="sb-num">${ng}<span class="sb-unit">個</span></div>
+          <div class="sb-lbl">要交換 ▸</div>
+        </div>
+        <div class="sb-item sb-done">
+          <div class="sb-num">${done}<span class="sb-unit">個</span></div>
+          <div class="sb-lbl">交換済</div>
+        </div>
+      </div>
+      <div class="records-count-note">総台数：<strong>${recs.length}</strong>台</div>
+    </div>
+  `;
+
+  const modelEntries = Object.entries(modelCount).sort((a,b)=>b[1]-a[1]);
+  const modelsHTML = `
+    <div class="detail-section">
+      <div class="detail-title">ベッド型番（${modelEntries.length}種 / 計${recs.length}台）</div>
+      ${modelEntries.map(([m,n])=>`
+        <div class="detail-list-item">
+          <span class="detail-list-name">${m}</span>
+          <span class="detail-list-val accent">${n}<span style="font-size:11px;color:var(--text2);margin-left:2px">台</span></span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+
+  const yearEntries = Object.entries(yearCount).sort((a,b)=>{
+    const na = parseInt(a[0]), nb = parseInt(b[0]);
+    if(isNaN(na) && isNaN(nb)) return 0;
+    if(isNaN(na)) return 1;
+    if(isNaN(nb)) return -1;
+    return na - nb; // 昇順（古い順）
+  });
+  const yearsHTML = `
+    <div class="detail-section">
+      <div class="detail-title">年式別 台数</div>
+      ${yearEntries.map(([y,n])=>`
+        <div class="detail-list-item">
+          <span class="detail-list-name">${y}</span>
+          <span class="detail-list-val">${n}<span style="font-size:11px;color:var(--text2);margin-left:2px">台</span></span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+
+  const myEntries = Object.entries(modelYear).sort((a,b)=>{
+    const [ma,ya] = a[0].split('|'); const [mb,yb] = b[0].split('|');
+    const na=parseInt(ya), nb=parseInt(yb);
+    if(ma!==mb) return ma.localeCompare(mb,'ja');
+    if(isNaN(na)&&isNaN(nb)) return 0;
+    if(isNaN(na)) return 1; if(isNaN(nb)) return -1;
+    return na-nb;
+  });
+  const myHTML = myEntries.length > 1 ? `
+    <div class="detail-section">
+      <div class="detail-title">型番 × 年式</div>
+      ${myEntries.map(([key,n])=>{
+        const [m,y] = key.split('|');
+        return `<div class="detail-list-item">
+          <span class="detail-list-name">${m} <span style="color:var(--text2);font-weight:500">（${y}）</span></span>
+          <span class="detail-list-val">${n}<span style="font-size:11px;color:var(--text2);margin-left:2px">台</span></span>
+        </div>`;
+      }).join('')}
+    </div>` : '';
+
+  // 病棟別集計
+  const wardMap = {};
+  recs.forEach(r=>{
+    const w = r.ward || '（未記入）';
+    if(!wardMap[w]) wardMap[w] = {total:0, ng:0, warn:0, done:0, ok:0, beds:0};
+    wardMap[w].beds++;
+    Object.values(r.casters||{}).forEach(v=>{
+      if(v==='未選択')return;
+      wardMap[w].total++;
+      if(v==='要交換')wardMap[w].ng++;
+      else if(v==='要注意')wardMap[w].warn++;
+      else if(v==='交換済み')wardMap[w].done++;
+      else if(v==='正常')wardMap[w].ok++;
+    });
+  });
+  const wardEntries = Object.entries(wardMap).sort((a,b)=>b[1].ng-a[1].ng);
+  const wardHTML = wardEntries.length > 1 ? `
+    <div class="detail-section">
+      <div class="detail-title">病棟別 集計</div>
+      ${wardEntries.map(([w,d])=>{
+        const rate = d.total ? (d.ng/d.total*100) : 0;
+        const cls = rate>=20?'r-high':rate>=10?'r-mid':'r-low';
+        return `<div class="hosp-row" style="cursor:default">
+          <div class="hosp-name">${w}</div>
+          <div class="hosp-stat">
+            <span class="hosp-rate ${cls}">${rate.toFixed(1)}%</span>
+            <span class="hosp-sub">${d.ng}個 / ${d.total}個（${d.beds}台）</span>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>` : '';
+
+  document.getElementById('hospModalBody').innerHTML = statsHTML + wardHTML + modelsHTML + yearsHTML + myHTML + `<div id="ngBedsInModal"></div>`;
+  document.getElementById('hospModal').classList.add('show');
+}
+
+function closeHospModal(e){
+  if(e && e.target){
+    if(e.target.classList.contains('hosp-modal') ||
+       e.target.classList.contains('modal-close') ||
+       e.target.closest('.modal-close')){
+      document.getElementById('hospModal').classList.remove('show');
+    }
+  }else{
+    document.getElementById('hospModal').classList.remove('show');
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// 要交換ベッド一覧モーダル
+// ═══════════════════════════════════════════════════════
+function openNgBedList(){
+  openNgBedListByHosp(null);
+}
+
+function toggleNgBedsInModal(hospName){
+  const el = document.getElementById('ngBedsInModal');
+  if(!el) return;
+  // 既に表示中なら閉じる
+  if(el.dataset.open === '1'){
+    el.innerHTML = '';
+    el.dataset.open = '0';
+    return;
+  }
+  const ngBeds = st.records.filter(r=>
+    r.hospital === hospName &&
+    Object.values(r.casters||{}).includes('要交換')
+  );
+  if(!ngBeds.length){
+    el.innerHTML = `<div class="detail-section"><div class="detail-title" style="color:var(--ng)">要交換ベッド</div><div style="font-size:13px;color:var(--text2);padding:8px 0">要交換のベッドはありません</div></div>`;
+    el.dataset.open = '1';
+    return;
+  }
+  const bedsHtml = ngBeds.map(r=>{
+    const loc = [r.ward, r.room, r.bed].filter(Boolean).join('-') || '－';
+    const ngPositions = CASTER_POSITIONS
+      .filter(({id})=>r.casters[id]==='要交換')
+      .map(({label})=>label).join('、');
+    return `<div class="ng-bed-item">
+      <div class="ng-bed-top">
+        <span class="ng-bed-loc">${loc}</span>
+        ${r.model?`<span class="ng-bed-model">${r.model}${r.year?`（${r.year}）`:''}</span>`:''}
+      </div>
+      <div class="ng-bed-pos"><span class="ng-bed-pos-lbl">要交換位置：</span>${ngPositions}</div>
+    </div>`;
+  }).join('');
+  el.innerHTML = `<div class="detail-section">
+    <div class="detail-title" style="color:var(--ng)">要交換ベッド（${ngBeds.length}台）</div>
+    ${bedsHtml}
+  </div>`;
+  el.dataset.open = '1';
+  // スクロールして見えるように
+  el.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+function openNgBedListByHosp(hospName){
+  const ngBeds = st.records.filter(r=>
+    Object.values(r.casters||{}).includes('要交換') &&
+    (hospName === null || r.hospital === hospName)
+  );
+
+  const title = hospName
+    ? `${hospName}　要交換（${ngBeds.length}台）`
+    : `要交換ベッド一覧（${ngBeds.length}台）`;
+  document.getElementById('ngModalTitle').textContent = title;
+
+  if(!ngBeds.length){
+    document.getElementById('ngModalBody').innerHTML =
+      '<div class="empty" style="padding:40px 20px">要交換のベッドはありません</div>';
+    document.getElementById('ngModal').classList.add('show');
+    return;
+  }
+
+  // 病院別にグループ化（全病院表示時のみ）
+  const grouped = {};
+  ngBeds.forEach(r=>{
+    const key = hospName ? '' : (r.hospital || '（未記入）');
+    if(!grouped[key]) grouped[key] = [];
+    grouped[key].push(r);
+  });
+
+  const html = Object.entries(grouped).map(([hosp, beds])=>{
+    const bedsHtml = beds.map(r=>{
+      const loc = [r.ward, r.room, r.bed].filter(Boolean).join('-') || '－';
+      const ngPositions = CASTER_POSITIONS
+        .filter(({id})=>r.casters[id]==='要交換')
+        .map(({label})=>label)
+        .join('、');
+      return `<div class="ng-bed-item">
+        <div class="ng-bed-top">
+          <span class="ng-bed-loc">${loc}</span>
+          ${r.model?`<span class="ng-bed-model">${r.model}${r.year?`（${r.year}）`:''}</span>`:''}
+        </div>
+        <div class="ng-bed-pos">
+          <span class="ng-bed-pos-lbl">要交換位置：</span>${ngPositions}
+        </div>
+      </div>`;
+    }).join('');
+    const sectionTitle = hosp ? `<div class="detail-title">${hosp}（${beds.length}台）</div>` : '';
+    return `<div class="detail-section">${sectionTitle}${bedsHtml}</div>`;
+  }).join('');
+
+  document.getElementById('ngModalBody').innerHTML = html;
+  document.getElementById('ngModal').classList.add('show');
+}
+
+function closeNgModal(e){
+  if(e && e.target){
+    if(e.target.classList.contains('hosp-modal') ||
+       e.target.classList.contains('modal-close') ||
+       e.target.closest('.modal-close')){
+      document.getElementById('ngModal').classList.remove('show');
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// STORAGE METER
+// ═══════════════════════════════════════════════════════
+function renderStorageMeter(){
+  const stSize = new Blob([JSON.stringify(st)]).size;
+  const phSize = new Blob([JSON.stringify(photoStore)]).size;
+  const total  = stSize + phSize;
+  const pct    = Math.min(100, Math.round(total / STORAGE_LIMIT * 100));
+  const text   = document.getElementById('storageText');
+  const bar    = document.getElementById('storageBar');
+  const note   = document.getElementById('storageNote');
+  text.textContent = `${(total/1024/1024).toFixed(2)} MB / ${(STORAGE_LIMIT/1024/1024).toFixed(1)} MB`;
+  bar.style.width = pct + '%';
+  bar.className = pct >= 90 ? 'full' : (pct >= 70 ? 'warn' : '');
+  if(pct >= 90){
+    note.textContent = '⚠️ 容量がほぼ満杯です。古い記録や写真の削除、またはバックアップ＆削除を推奨します。';
+    note.style.color = 'var(--ng)';
+  }else if(pct >= 70){
+    note.textContent = '写真：' + Object.keys(photoStore).length + '枚 / 記録：' + st.records.length + '件 / 残量注意';
+    note.style.color = 'var(--warn)';
+  }else{
+    note.textContent = '写真：' + Object.keys(photoStore).length + '枚 / 記録：' + st.records.length + '台';
+    note.style.color = 'var(--text2)';
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// EXPORT
+// ═══════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════
+// メール送信
+// ═══════════════════════════════════════════════════════
+function sendEmailReport(type){
+  const hosp = document.getElementById('email-hospital')?.value || '';
+  const recs = hosp ? st.records.filter(r=>r.hospital===hosp) : st.records;
+
+  if(!recs.length){ showToast('⚠️ データがありません','warn'); return; }
+
+  const today = new Date().toLocaleDateString('ja-JP',{year:'numeric',month:'2-digit',day:'2-digit'}).replace(/\//g,'-');
+  const hospLabel = hosp || '全病院';
+
+  if(type === 'ng'){
+    // 要対応リスト
+    const ngRecs = recs.filter(r=>Object.values(r.casters||{}).includes('要交換'));
+    if(!ngRecs.length){ showToast('⚠️ 要交換のベッドがありません','warn'); return; }
+
+    // 病院別にグループ化
+    const grouped = {};
+    ngRecs.forEach(r=>{
+      if(!grouped[r.hospital]) grouped[r.hospital]=[];
+      grouped[r.hospital].push(r);
+    });
+
+    const lines = ['【要交換ベッド一覧】', `対象：${hospLabel}　${today}`, ''];
+    Object.entries(grouped).forEach(([h,beds])=>{
+      lines.push(`■ ${h}（${beds.length}台）`);
+      beds.forEach(r=>{
+        const loc = [r.ward, r.room, r.bed].filter(Boolean).join('-');
+        const ngPos = CASTER_POSITIONS
+          .filter(({id})=>r.casters[id]==='要交換')
+          .map(({id,label})=>{
+            const detail = r.casterDetail&&r.casterDetail[id] ? `（${r.casterDetail[id]}）` : '';
+            return label+detail;
+          }).join('・');
+        lines.push(`  ${loc}　${r.model||''}${r.year?` ${r.year}年式`:''}　要交換：${ngPos}`);
+      });
+      lines.push('');
+    });
+    lines.push(`合計：${ngRecs.length}台`);
+
+    const subject = encodeURIComponent(`【要交換ベッド一覧】${hospLabel} ${today}`);
+    const body = encodeURIComponent(lines.join('\n'));
+    window.location.href = `mailto:?subject=${subject}&body=${body}`;
+
+  }else{
+    // 全記録の概要
+    const hospMap = {};
+    recs.forEach(r=>{
+      if(!hospMap[r.hospital]) hospMap[r.hospital]={beds:0,ng:0,warn:0,done:0};
+      hospMap[r.hospital].beds++;
+      Object.values(r.casters||{}).forEach(v=>{
+        if(v==='要交換') hospMap[r.hospital].ng++;
+        else if(v==='要注意') hospMap[r.hospital].warn++;
+        else if(v==='交換済み') hospMap[r.hospital].done++;
+      });
+    });
+
+    const lines = ['【ラウンド記録 概要レポート】', `対象：${hospLabel}　${today}`, `総台数：${recs.length}台`, ''];
+    Object.entries(hospMap).sort((a,b)=>b[1].ng-a[1].ng).forEach(([h,d])=>{
+      const total = d.beds*4;
+      const rate = total ? (d.ng/total*100).toFixed(1) : '0.0';
+      lines.push(`■ ${h}`);
+      lines.push(`  台数：${d.beds}台　要交換率：${rate}%`);
+      lines.push(`  要交換：${d.ng}個　要注意：${d.warn}個　交換済：${d.done}個`);
+      lines.push('');
+    });
+
+    const subject = encodeURIComponent(`【ラウンド記録概要】${hospLabel} ${today}`);
+    const body = encodeURIComponent(lines.join('\n'));
+    window.location.href = `mailto:?subject=${subject}&body=${body}`;
+  }
+}
+// ═══════════════════════════════════════════════════════
+function getExportRecords(){
+  const hosp = document.getElementById('export-hospital')?.value || '';
+  return hosp ? st.records.filter(r=>r.hospital===hosp) : st.records;
+}
+
+function csvRow(arr){
+  return arr.map(c=>`"${String(c===null||c===undefined?'':c).replace(/"/g,'""')}"`).join(',');
+}
+
+function downloadCSV(filename, rows){
+  const csv = '\uFEFF' + rows.map(r=>csvRow(r)).join('\r\n');
+  const blob = new Blob([csv],{type:'text/csv;charset=utf-8'});
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href=url; a.download=filename;
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a); URL.revokeObjectURL(url);
+}
+
+function todayStr(){
+  return new Date().toLocaleDateString('ja-JP',{year:'numeric',month:'2-digit',day:'2-digit'}).replace(/\//g,'-');
+}
+
+// ① 明細CSV
+function exportDetailCSV(){
+  const recs = getExportRecords();
+  if(!recs.length){ showToast('⚠️ データがありません','warn'); return; }
+  const allParts = st.parts;
+  const header = ['日付','時刻','病院名','病棟','部屋番号','ベッドNo','型番','年式','床番①','床番②','マットレス','見守り機器','TV',
+    '頭側・右','頭側・右詳細','頭側・左','頭側・左詳細','足側・右','足側・右詳細','足側・左','足側・左詳細',
+    ...allParts,'写真枚数','メモ'];
+  const rows = recs.map(r=>{
+    const pc = allParts.map(p=>(r.partsSev&&r.partsSev[p])||'');
+    return [r.date,r.time,r.hospital,r.ward||'',r.room||'',r.bed||'',r.model||'',
+      r.year||'',r.floor1||'',r.floor2||'',r.mattress||'',r.monitor||'',r.tv||'',
+      r.casters.HR||'',(r.casterDetail&&r.casterDetail.HR)||'',
+      r.casters.HL||'',(r.casterDetail&&r.casterDetail.HL)||'',
+      r.casters.FR||'',(r.casterDetail&&r.casterDetail.FR)||'',
+      r.casters.FL||'',(r.casterDetail&&r.casterDetail.FL)||'',
+      ...pc,(r.photoIds||[]).length,r.memo||''];
+  });
+  const hosp = document.getElementById('export-hospital')?.value||'全病院';
+  downloadCSV(`RoundNote_明細_${hosp}_${todayStr()}.csv`, [header, ...rows]);
+  showToast('① 明細CSV ダウンロード');
+}
+
+// ② 集計CSV
+function exportSummaryCSV(){
+  const recs = getExportRecords();
+  if(!recs.length){ showToast('⚠️ データがありません','warn'); return; }
+
+  const rows = [];
+
+  // ── 病院別集計 ──
+  rows.push(['【病院別 集計】']);
+  rows.push(['病院名','台数','要交換率(%)','正常(個)','要注意(個)','要交換(個)','交換済み(個)','キャスター総数(個)']);
+  const hospMap = {};
+  recs.forEach(r=>{
+    if(!hospMap[r.hospital]) hospMap[r.hospital]={beds:0,ok:0,warn:0,ng:0,done:0,total:0};
+    hospMap[r.hospital].beds++;
+    Object.values(r.casters||{}).forEach(v=>{
+      if(v==='未選択')return;
+      hospMap[r.hospital].total++;
+      if(v==='正常')     hospMap[r.hospital].ok++;
+      else if(v==='要注意') hospMap[r.hospital].warn++;
+      else if(v==='要交換') hospMap[r.hospital].ng++;
+      else if(v==='交換済み') hospMap[r.hospital].done++;
+    });
+  });
+  Object.entries(hospMap).sort((a,b)=>b[1].ng-a[1].ng).forEach(([h,d])=>{
+    const rate = d.total ? (d.ng/d.total*100).toFixed(1) : '0.0';
+    rows.push([h,d.beds,rate,d.ok,d.warn,d.ng,d.done,d.total]);
+  });
+  rows.push([]);
+
+  // ── 病棟別集計 ──
+  rows.push(['【病棟別 集計】']);
+  rows.push(['病院名','病棟','台数','要交換率(%)','正常(個)','要注意(個)','要交換(個)','交換済み(個)']);
+  const wardMap = {};
+  recs.forEach(r=>{
+    const key = `${r.hospital}||${r.ward||'未記入'}`;
+    if(!wardMap[key]) wardMap[key]={hosp:r.hospital,ward:r.ward||'未記入',beds:0,ok:0,warn:0,ng:0,done:0,total:0};
+    wardMap[key].beds++;
+    Object.values(r.casters||{}).forEach(v=>{
+      if(v==='未選択')return;
+      wardMap[key].total++;
+      if(v==='正常')      wardMap[key].ok++;
+      else if(v==='要注意') wardMap[key].warn++;
+      else if(v==='要交換') wardMap[key].ng++;
+      else if(v==='交換済み') wardMap[key].done++;
+    });
+  });
+  Object.values(wardMap).sort((a,b)=>{
+    if(a.hosp!==b.hosp) return a.hosp.localeCompare(b.hosp,'ja');
+    return b.ng-a.ng;
+  }).forEach(d=>{
+    const rate = d.total ? (d.ng/d.total*100).toFixed(1) : '0.0';
+    rows.push([d.hosp,d.ward,d.beds,rate,d.ok,d.warn,d.ng,d.done]);
+  });
+  rows.push([]);
+
+  // ── 型番別台数 ──
+  rows.push(['【型番別 台数】']);
+  rows.push(['型番','台数','要交換率(%)','要交換(個)','キャスター総数(個)']);
+  const modelMap = {};
+  recs.forEach(r=>{
+    const m = r.model||'未記入';
+    if(!modelMap[m]) modelMap[m]={beds:0,ng:0,total:0};
+    modelMap[m].beds++;
+    Object.values(r.casters||{}).forEach(v=>{
+      if(v==='未選択')return;
+      modelMap[m].total++;
+      if(v==='要交換') modelMap[m].ng++;
+    });
+  });
+  Object.entries(modelMap).sort((a,b)=>b[1].beds-a[1].beds).forEach(([m,d])=>{
+    const rate = d.total ? (d.ng/d.total*100).toFixed(1) : '0.0';
+    rows.push([m,d.beds,rate,d.ng,d.total]);
+  });
+  rows.push([]);
+
+  // ── 年式別台数 ──
+  rows.push(['【年式別 台数】']);
+  rows.push(['年式','台数','要交換率(%)','要交換(個)','キャスター総数(個)']);
+  const yearMap = {};
+  recs.forEach(r=>{
+    const y = r.year||'未記入';
+    if(!yearMap[y]) yearMap[y]={beds:0,ng:0,total:0};
+    yearMap[y].beds++;
+    Object.values(r.casters||{}).forEach(v=>{
+      if(v==='未選択')return;
+      yearMap[y].total++;
+      if(v==='要交換') yearMap[y].ng++;
+    });
+  });
+  Object.entries(yearMap).sort((a,b)=>{
+    const na=parseInt(a[0]),nb=parseInt(b[0]);
+    if(isNaN(na)&&isNaN(nb))return 0;
+    if(isNaN(na))return 1; if(isNaN(nb))return -1;
+    return na-nb;
+  }).forEach(([y,d])=>{
+    const rate = d.total ? (d.ng/d.total*100).toFixed(1) : '0.0';
+    rows.push([y,d.beds,rate,d.ng,d.total]);
+  });
+  rows.push([]);
+
+  // ── キャスター位置別 要交換件数 ──
+  rows.push(['【位置別 要交換件数】']);
+  rows.push(['位置','要交換(個)']);
+  CASTER_POSITIONS.forEach(({id,label})=>{
+    const cnt = recs.filter(r=>r.casters[id]==='要交換').length;
+    rows.push([label,cnt]);
+  });
+
+  const hosp = document.getElementById('export-hospital')?.value||'全病院';
+  downloadCSV(`RoundNote_集計_${hosp}_${todayStr()}.csv`, rows);
+  showToast('② 集計CSV ダウンロード');
+}
+
+// ③ 要対応リストCSV
+function exportNgListCSV(){
+  const recs = getExportRecords();
+  const ngRecs = recs.filter(r=>Object.values(r.casters||{}).includes('要交換'));
+  if(!ngRecs.length){ showToast('⚠️ 要交換のベッドがありません','warn'); return; }
+
+  const header = ['病院名','病棟','部屋番号','ベッドNo','型番','年式','要交換位置','詳細','日付'];
+  const rows = ngRecs.map(r=>{
+    const ngPos = CASTER_POSITIONS
+      .filter(({id})=>r.casters[id]==='要交換')
+      .map(({label})=>label).join('・');
+    const ngDetail = CASTER_POSITIONS
+      .filter(({id})=>r.casters[id]==='要交換'&&r.casterDetail&&r.casterDetail[id])
+      .map(({id,label})=>`${label}:${r.casterDetail[id]}`).join('・');
+    return [r.hospital,r.ward||'',r.room||'',r.bed||'',r.model||'',r.year||'',ngPos,ngDetail,r.date];
+  });
+
+  // 病院→病棟→部屋の順でソート
+  rows.sort((a,b)=>{
+    if(a[0]!==b[0]) return a[0].localeCompare(b[0],'ja');
+    if(a[1]!==b[1]) return a[1].localeCompare(b[1],'ja');
+    return a[2].localeCompare(b[2],'ja');
+  });
+
+  const hosp = document.getElementById('export-hospital')?.value||'全病院';
+  downloadCSV(`RoundNote_要対応リスト_${hosp}_${todayStr()}.csv`, [header,...rows]);
+  showToast('③ 要対応リスト ダウンロード');
+}
+
+// 一括ダウンロード
+function exportAllCSV(){
+  const recs = getExportRecords();
+  if(!recs.length){ showToast('⚠️ データがありません','warn'); return; }
+  const hosp = document.getElementById('export-hospital')?.value||'全病院';
+  const allParts = st.parts;
+
+  // ① 明細
+  const detailHeader = ['日付','時刻','病院名','病棟','部屋番号','ベッドNo','型番','年式','床番①','床番②','マットレス','見守り機器','TV',
+    '頭側・右','頭側・右詳細','頭側・左','頭側・左詳細','足側・右','足側・右詳細','足側・左','足側・左詳細',
+    ...allParts,'写真枚数','メモ'];
+  const detailRows = recs.map(r=>{
+    const pc = allParts.map(p=>(r.partsSev&&r.partsSev[p])||'');
+    return [r.date,r.time,r.hospital,r.ward||'',r.room||'',r.bed||'',r.model||'',
+      r.year||'',r.floor1||'',r.floor2||'',r.mattress||'',r.monitor||'',r.tv||'',
+      r.casters.HR||'',(r.casterDetail&&r.casterDetail.HR)||'',
+      r.casters.HL||'',(r.casterDetail&&r.casterDetail.HL)||'',
+      r.casters.FR||'',(r.casterDetail&&r.casterDetail.FR)||'',
+      r.casters.FL||'',(r.casterDetail&&r.casterDetail.FL)||'',
+      ...pc,(r.photoIds||[]).length,r.memo||''];
+  });
+
+  // ② 集計
+  const hospMap = {};
+  recs.forEach(r=>{
+    if(!hospMap[r.hospital]) hospMap[r.hospital]={beds:0,ok:0,warn:0,ng:0,done:0,total:0};
+    hospMap[r.hospital].beds++;
+    Object.values(r.casters||{}).forEach(v=>{
+      if(v==='未選択')return; hospMap[r.hospital].total++;
+      if(v==='正常') hospMap[r.hospital].ok++;
+      else if(v==='要注意') hospMap[r.hospital].warn++;
+      else if(v==='要交換') hospMap[r.hospital].ng++;
+      else if(v==='交換済み') hospMap[r.hospital].done++;
+    });
+  });
+  const summaryRows = [
+    ['【病院別 集計】'],
+    ['病院名','台数','要交換率(%)','正常(個)','要注意(個)','要交換(個)','交換済み(個)'],
+    ...Object.entries(hospMap).sort((a,b)=>b[1].ng-a[1].ng).map(([h,d])=>{
+      const rate = d.total ? (d.ng/d.total*100).toFixed(1) : '0.0';
+      return [h,d.beds,rate,d.ok,d.warn,d.ng,d.done];
+    }),
+    [],
+    ['【位置別 要交換件数】'],
+    ['位置','要交換(個)'],
+    ...CASTER_POSITIONS.map(({id,label})=>[label, recs.filter(r=>r.casters[id]==='要交換').length]),
+  ];
+
+  // ③ 要対応
+  const ngRecs = recs.filter(r=>Object.values(r.casters||{}).includes('要交換'));
+  const ngRows = ngRecs.length ? [
+    ['【要交換ベッド 要対応リスト】'],
+    ['病院名','病棟','部屋番号','ベッドNo','型番','年式','要交換位置','詳細','日付'],
+    ...ngRecs.sort((a,b)=>{
+      if(a.hospital!==b.hospital) return a.hospital.localeCompare(b.hospital,'ja');
+      return (a.ward||'').localeCompare(b.ward||'','ja');
+    }).map(r=>{
+      const ngPos = CASTER_POSITIONS.filter(({id})=>r.casters[id]==='要交換').map(({label})=>label).join('・');
+      const ngDetail = CASTER_POSITIONS
+        .filter(({id})=>r.casters[id]==='要交換'&&r.casterDetail&&r.casterDetail[id])
+        .map(({id,label})=>`${label}:${r.casterDetail[id]}`).join('・');
+      return [r.hospital,r.ward||'',r.room||'',r.bed||'',r.model||'',r.year||'',ngPos,ngDetail,r.date];
+    })
+  ] : [['【要交換ベッド 要対応リスト】'],['該当なし']];
+
+  // 3セクションを縦に結合して1ファイルに
+  const allRows = [
+    ['■ 明細'],
+    detailHeader,
+    ...detailRows,
+    [],
+    ...summaryRows,
+    [],
+    ...ngRows,
+  ];
+
+  downloadCSV(`RoundNote_${hosp}_${todayStr()}.csv`, allRows);
+  showToast('ダウンロードしました');
+}
+
+// 旧関数（互換性維持）
+function exportCSV(){ exportDetailCSV(); }
+
+function clearAll(){
+  if(!confirm('すべての記録と写真を削除します。\n元に戻せません。'))return;
+  st.records=[];
+  photoStore={};
+  persistState(); persistPhotos();
+  updateBadge(); renderList(); renderSummary(); renderStorageMeter();
+  showToast('削除しました');
+}
+
+function cleanupOld(days){
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - days);
+
+  const toDelete = st.records.filter(r=>{
+    const d = parseRecordDate(r.date);
+    return d && d < cutoff;
+  });
+  if(!toDelete.length){
+    showToast(`対象なし（${days}日より古い記録はありません）`,'warn');
+    return;
+  }
+  const msg = `${days}日より古い記録を ${toDelete.length} 件 削除します。\n（関連写真もすべて削除されます）\n\n続行しますか？`;
+  if(!confirm(msg)) return;
+
+  // 関連写真を削除
+  toDelete.forEach(r=>{
+    (r.photoIds||[]).forEach(pid=>{ delete photoStore[pid]; });
+  });
+  // 記録から除外
+  const keepIds = new Set(toDelete.map(r=>r.id));
+  st.records = st.records.filter(r=>!keepIds.has(r.id));
+
+  if(!persistState() || !persistPhotos()){
+    showToast('⚠️ 削除処理で問題発生','err');
+    return;
+  }
+  updateBadge(); renderList(); renderSummary(); renderStorageMeter();
+  showToast(`🗑 ${toDelete.length}件 削除しました`);
+}
+
+function parseRecordDate(str){
+  // "2026/4/18" 等の日本語日付を Date に変換
+  if(!str) return null;
+  const parts = str.replace(/年|月/g,'/').replace(/日/,'').split('/').map(s=>s.trim()).filter(Boolean);
+  if(parts.length < 3) return null;
+  const [y,m,d] = parts.map(Number);
+  return new Date(y, m-1, d);
+}
+
+// ═══════════════════════════════════════════════════════
+// HOSPITAL / MODEL / PARTS
+// ═══════════════════════════════════════════════════════
+function renderHospitalOptions(){
+  ['inp-hospital','filter-hospital','export-hospital','email-hospital'].forEach(id=>{
+    const el=document.getElementById(id); if(!el)return;
+    const val=el.value;
+    el.innerHTML=(id==='filter-hospital'?'<option value="">すべての病院</option>':'<option value="">選択してください</option>')
+      +st.hospitals.map(h=>`<option value="${h}">${h}</option>`).join('');
+    if(val) el.value=val;
+  });
+}
+function renderPartsInputTable(){
+  document.getElementById('partsBody').innerHTML=st.parts.map(p=>`
+    <tr>
+      <td>${p}</td>
+      ${SEVS.map(s=>`<td><button class="sev-chip ${formSev[p]===s?'a-'+s:''}" onclick="toggleSev('${p}','${s}')">${formSev[p]===s?'✓':'－'}</button></td>`).join('')}
+    </tr>`).join('');
+}
+function toggleSev(part,sev){
+  formSev[part]=(formSev[part]===sev)?'':sev;
+  renderPartsInputTable();
+  scheduleDraftSave();
+}
+function renderPartsEditor(){
+  const c=document.getElementById('partsEditor');
+  if(!st.parts.length){c.innerHTML='<div style="color:var(--text2);font-size:13px;padding:8px 0">登録なし</div>';return;}
+  c.innerHTML=st.parts.map((p,i)=>`
+    <div class="part-row" id="pp-${i}">
+      <span class="part-label" id="pl-${i}">${p}</span>
+      <button class="icon-btn" onclick="editPart(${i})">✏️</button>
+      <button class="icon-btn" onclick="deletePart(${i})" style="border-color:var(--ng);color:var(--ng)">✕</button>
+    </div>`).join('');
+}
+function editPart(i){
+  if(document.getElementById('pi-'+i))return;
+  const span=document.getElementById('pl-'+i);
+  const inp=document.createElement('input');
+  inp.className='part-input';inp.id='pi-'+i;inp.value=st.parts[i];
+  inp.addEventListener('blur',()=>savePart(i));
+  inp.addEventListener('keydown',e=>{if(e.key==='Enter')savePart(i);});
+  span.replaceWith(inp);inp.focus();inp.select();
+}
+function savePart(i){
+  const inp=document.getElementById('pi-'+i);if(!inp)return;
+  const v=inp.value.trim();
+  if(v&&v!==st.parts[i]){
+    const old=st.parts[i];
+    st.records.forEach(r=>{ if(r.partsSev&&old in r.partsSev){r.partsSev[v]=r.partsSev[old];delete r.partsSev[old];} });
+    st.parts[i]=v; persistState(); showToast('更新しました');
+  }
+  renderPartsEditor(); renderPartsInputTable();
+}
+function deletePart(i){
+  if(!confirm(`「${st.parts[i]}」を削除しますか？`))return;
+  st.parts.splice(i,1); persistState();
+  renderPartsEditor(); renderPartsInputTable(); showToast('削除しました');
+}
+function addPartMgr(){
+  const v=document.getElementById('new-part-mgr').value.trim();
+  if(!v||st.parts.includes(v)){showToast('⚠️ 入力を確認','warn');return;}
+  st.parts.push(v); persistState();
+  document.getElementById('new-part-mgr').value='';
+  renderPartsEditor(); renderPartsInputTable(); showToast('追加しました');
+}
+
+function renderHospitalsEditor(){
+  const c=document.getElementById('hospitalsEditor');
+  if(!st.hospitals.length){c.innerHTML='<div style="color:var(--text2);font-size:13px;padding:8px 0">登録なし</div>';return;}
+  c.innerHTML=st.hospitals.map((h,i)=>`
+    <div class="part-row" id="hr-${i}">
+      <span class="part-label" id="hl-${i}">${h}</span>
+      <button class="icon-btn" onclick="editHospital(${i})">✏️</button>
+      <button class="icon-btn" onclick="deleteHospital(${i})" style="border-color:var(--ng);color:var(--ng)">✕</button>
+    </div>`).join('');
+}
+function editHospital(i){
+  if(document.getElementById('hi-'+i))return;
+  const span=document.getElementById('hl-'+i);
+  const inp=document.createElement('input');
+  inp.className='part-input';inp.id='hi-'+i;inp.value=st.hospitals[i];
+  inp.addEventListener('blur',()=>saveHospital(i));
+  inp.addEventListener('keydown',e=>{if(e.key==='Enter')saveHospital(i);});
+  span.replaceWith(inp);inp.focus();inp.select();
+}
+function saveHospital(i){
+  const inp=document.getElementById('hi-'+i);if(!inp)return;
+  const v=inp.value.trim();
+  if(v&&v!==st.hospitals[i]){
+    const old=st.hospitals[i];
+    st.records.forEach(r=>{if(r.hospital===old)r.hospital=v;});
+    st.hospitals[i]=v; persistState(); showToast('更新しました');
+  }
+  renderHospitalsEditor(); renderHospitalOptions();
+}
+function deleteHospital(i){
+  if(!confirm(`「${st.hospitals[i]}」を削除しますか？`))return;
+  st.hospitals.splice(i,1); persistState();
+  renderHospitalsEditor(); renderHospitalOptions(); showToast('削除しました');
+}
+function addHospitalMgr(){
+  const v=document.getElementById('new-hospital-mgr').value.trim();
+  if(!v||st.hospitals.includes(v)){showToast('⚠️ 入力を確認','warn');return;}
+  st.hospitals.push(v); persistState();
+  document.getElementById('new-hospital-mgr').value='';
+  renderHospitalsEditor(); renderHospitalOptions(); showToast('追加しました');
+}
+
+function renderModelOptions(){
+  const el=document.getElementById('inp-model'); if(!el)return;
+  const val=el.value;
+  el.innerHTML='<option value="">選択してください</option>'
+    +st.models.map(m=>`<option value="${m}">${m}</option>`).join('');
+  if(val) el.value=val;
+}
+function renderModelsEditor(){
+  const c=document.getElementById('modelsEditor');
+  if(!st.models.length){c.innerHTML='<div style="color:var(--text2);font-size:13px;padding:8px 0">登録なし</div>';return;}
+  c.innerHTML=st.models.map((m,i)=>`
+    <div class="part-row" id="mr-${i}">
+      <span class="part-label" id="ml-${i}">${m}</span>
+      <button class="icon-btn" onclick="editModel(${i})">✏️</button>
+      <button class="icon-btn" onclick="deleteModel(${i})" style="border-color:var(--ng);color:var(--ng)">✕</button>
+    </div>`).join('');
+}
+function editModel(i){
+  if(document.getElementById('mi-'+i))return;
+  const span=document.getElementById('ml-'+i);
+  const inp=document.createElement('input');
+  inp.className='part-input';inp.id='mi-'+i;inp.value=st.models[i];
+  inp.addEventListener('blur',()=>saveModel(i));
+  inp.addEventListener('keydown',e=>{if(e.key==='Enter')saveModel(i);});
+  span.replaceWith(inp);inp.focus();inp.select();
+}
+function saveModel(i){
+  const inp=document.getElementById('mi-'+i);if(!inp)return;
+  const v=inp.value.trim();
+  if(v&&v!==st.models[i]){
+    const old=st.models[i];
+    st.records.forEach(r=>{if(r.model===old)r.model=v;});
+    st.models[i]=v; persistState(); showToast('更新しました');
+  }
+  renderModelsEditor(); renderModelOptions();
+}
+function deleteModel(i){
+  if(!confirm(`「${st.models[i]}」を削除しますか？`))return;
+  st.models.splice(i,1); persistState();
+  renderModelsEditor(); renderModelOptions(); showToast('削除しました');
+}
+function addModelMgr(){
+  const v=document.getElementById('new-model-mgr').value.trim();
+  if(!v||st.models.includes(v)){showToast('⚠️ 入力を確認','warn');return;}
+  st.models.push(v); persistState();
+  document.getElementById('new-model-mgr').value='';
+  renderModelsEditor(); renderModelOptions(); showToast('追加しました');
+}
+
+// ═══════════════════════════════════════════════════════
+// TOAST
+// ═══════════════════════════════════════════════════════
+let toastTimer;
+function showToast(msg,type){
+  const t=document.getElementById('toast');
+  t.textContent=msg;
+  t.className = 'show';
+  if(type==='warn') t.classList.add('t-warn');
+  if(type==='err')  t.classList.add('t-err');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>t.classList.remove('show'),2400);
+}
+</script>
+</body>
+</html>
